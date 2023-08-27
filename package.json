@@ -15,8 +15,7 @@
     "start": "craco start ",
     "build": "craco build",
     "test": "craco test --env=jsdom",
-    "eject": "craco eject",
-    "tailwind": "tailwindcss -o style.css -c ./tailwind.config.js && tailwindcss  src/index.css -c ./tailwind.config.js"
+    "eject": "craco eject"
   },
   "engines": {
     "node": "16.x"

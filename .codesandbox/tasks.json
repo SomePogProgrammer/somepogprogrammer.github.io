@@ -28,11 +28,6 @@
       "name": "eject",
       "command": "yarn eject",
       "runAtStart": false
-    },
-    "tailwind": {
-      "name": "tailwind",
-      "command": "yarn tailwind",
-      "runAtStart": true
     }
   }
 }
