@@ -22,12 +22,15 @@
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
+
+  white-space: nowrap;
 }
 .navigation-links2-navlink:hover {
   border-color: black;
   transition-delay: 0s;
   border-bottom-width: 5px;
   transition-duration: 0.05s;
+  white-space: nowrap;
 }
 .navigation-links2-navlink1 {
   height: 100%;
@@ -42,9 +45,11 @@
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
+  white-space: nowrap;
 }
 .navigation-links2-navlink1:hover {
   border-bottom-width: 5px;
+  white-space: nowrap;
 }
 .navigation-links2-navlink2 {
   height: 100%;
@@ -59,6 +64,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
+  white-space: nowrap;
 }
 .navigation-links2-navlink2:hover {
   border-bottom-width: 5px;
@@ -76,6 +82,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
+  white-space: nowrap;
 }
 .navigation-links2-navlink3:hover {
   border-bottom-width: 5px;
@@ -93,6 +100,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
+  white-space: nowrap;
 }
 .navigation-links2-navlink4:hover {
   border-bottom-width: 5px;
