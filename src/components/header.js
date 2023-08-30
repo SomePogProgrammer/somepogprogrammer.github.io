@@ -4,14 +4,22 @@ import PropTypes from "prop-types";
 
 import NavigationLinks2 from "./navigation-links2";
 import "./header.css";
+import { useLocation } from "react-router-dom";
 
 const Header = (propsTable) => {
   var props = window.fixComponentProps(propsTable);
+  var curRoute = window.location.pathname
+  if (curRoute  == "/") {
+    curRoute = "About-Me"
+  } else {
+    curRoute = curRoute.replace("/","")
+  }
   if (props) {
     props = props;
   } else {
     props = propsTable;
   }
+
   return (
     <header className="header-header fixed-navbar">
       <img
@@ -31,7 +39,7 @@ const Header = (propsTable) => {
         <button className="header-register button">{props.Register}</button>
       </div>
       <h1 className="header-page-heading fixed-navbar">
-        <span className="">Behind The Scenes</span>
+        <span className="">{curRoute}</span>
         <br className=""></br>
       </h1>
     </header>
