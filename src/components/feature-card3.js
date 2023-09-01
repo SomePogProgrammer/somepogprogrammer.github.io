@@ -1,4 +1,4 @@
-import React from 'react'
+import {memo} from "react";
 
 import PropTypes from 'prop-types'
 
@@ -34,4 +34,4 @@ FeatureCard3.propTypes = {
   rootClassName: PropTypes.string,
 }
 
-export default FeatureCard3
+export default memo(FeatureCard3);

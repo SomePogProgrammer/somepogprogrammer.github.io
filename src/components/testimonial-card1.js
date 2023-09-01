@@ -1,5 +1,4 @@
-import { useMemo } from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./testimonial-card1.css";
@@ -71,4 +70,4 @@ TestimonialCard1.propTypes = {
   image_src: PropTypes.string,
 };
 
-export default TestimonialCard1;
+export default memo(TestimonialCard1);

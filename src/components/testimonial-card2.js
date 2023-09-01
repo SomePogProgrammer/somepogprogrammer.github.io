@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./testimonial-card2.css";
@@ -68,4 +67,4 @@ TestimonialCard2.propTypes = {
   Education: PropTypes.string,
 };
 
-export default TestimonialCard2;
+export default memo(TestimonialCard2);

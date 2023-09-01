@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./feature-card5.css";
@@ -38,4 +37,4 @@ FeatureCard5.propTypes = {
   PastWork: PropTypes.string,
 };
 
-export default FeatureCard5;
+export default memo(FeatureCard5);

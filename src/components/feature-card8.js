@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./feature-card8.css";
@@ -34,4 +33,4 @@ FeatureCard8.propTypes = {
   description: PropTypes.string,
 };
 
-export default FeatureCard8;
+export default memo(FeatureCard8);

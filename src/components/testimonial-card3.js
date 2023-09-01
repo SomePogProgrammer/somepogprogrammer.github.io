@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./testimonial-card3.css";
@@ -78,4 +77,4 @@ TestimonialCard3.propTypes = {
   role: PropTypes.string,
 };
 
-export default TestimonialCard3;
+export default memo(TestimonialCard3);

@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./testimonial-card4.css";
@@ -55,4 +54,4 @@ TestimonialCard4.propTypes = {
   picture_alt: PropTypes.string,
 };
 
-export default TestimonialCard4;
+export default memo(TestimonialCard4);

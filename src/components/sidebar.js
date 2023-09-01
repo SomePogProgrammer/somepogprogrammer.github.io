@@ -1,5 +1,4 @@
-import React from "react";
-
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import "./sidebar.css";
@@ -55,4 +54,4 @@ Sidebar.propTypes = {
   ContactMe: PropTypes.string,
 };
 
-export default Sidebar;
+export default memo(Sidebar);
