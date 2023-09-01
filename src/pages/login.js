@@ -8,8 +8,8 @@ const Login = (props) => {
   return (
     <div className="login-container">
       <Helmet>
-        <title>Login - Traveler (Template 12)</title>
-        <meta property="og:title" content="Login - Traveler (Template 12)" />
+        <title>Login - SomeProgrammer's Portfolio</title>
+        <meta property="og:title" content="Login - SomeProgrammer's Portfolio" />
       </Helmet>
       <div className="login-container1">
         <h2 className="login-text">

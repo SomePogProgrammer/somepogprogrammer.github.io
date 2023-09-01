@@ -9,10 +9,10 @@ const BehindTheScenes = () => {
   return (
     <div className="behind-the-scenes-container">
       <Helmet>
-        <title>BehindTheScenes - Traveler (Template 12)</title>
+        <title>BehindTheScenes - SomeProgrammer's Portfolio</title>
         <meta
           property="og:title"
-          content="BehindTheScenes - Traveler (Template 12)"
+          content="BehindTheScenes - SomeProgrammer's Portfolio"
         />
       </Helmet>
       <Header></Header>

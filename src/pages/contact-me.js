@@ -9,10 +9,10 @@ const ContactMe = (props) => {
   return (
     <div className="contact-me-container">
       <Helmet>
-        <title>ContactMe - Traveler (Template 12)</title>
+        <title>ContactMe - SomeProgrammer's Portfolio</title>
         <meta
           property="og:title"
-          content="ContactMe - Traveler (Template 12)"
+          content="ContactMe - SomeProgrammer's Portfolio"
         />
       </Helmet>
       <Header rootClassName="header-root-class-name3"></Header>

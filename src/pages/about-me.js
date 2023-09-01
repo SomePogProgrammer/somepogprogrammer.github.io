@@ -19,8 +19,8 @@ const AboutMe = (props) => {
   return (
     <div className="about-me-container">
       <Helmet>
-        <title>Traveler (Template 12)</title>
-        <meta property="og:title" content="Traveler (Template 12)" />
+        <title>SomeProgrammer's Portfolio</title>
+        <meta property="og:title" content="SomeProgrammer's Portfolio" />
       </Helmet>
       <div data-role="MobileMenu" className="about-me-mobile-menu">
         <div className="about-me-nav">

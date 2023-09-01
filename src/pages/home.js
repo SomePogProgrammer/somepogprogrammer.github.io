@@ -8,8 +8,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Home - Traveler (Template 12)</title>
-        <meta property="og:title" content="Home - Traveler (Template 12)" />
+        <title>Home - SomeProgrammer's Portfolio</title>
+        <meta property="og:title" content="Home - SomeProgrammer's Portfolio" />
       </Helmet>
       <section className="home-footer"></section>
       <span className="home-text">Send me an offer!</span>

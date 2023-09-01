@@ -10,10 +10,10 @@ const WebDevelopment = (props) => {
   return (
     <div className="web-development-container">
       <Helmet>
-        <title>WebDevelopment - Traveler (Template 12)</title>
+        <title>WebDevelopment - SomeProgrammer's Portfolio</title>
         <meta
           property="og:title"
-          content="WebDevelopment - Traveler (Template 12)"
+          content="WebDevelopment - SomeProgrammer's Portfolio"
         />
       </Helmet>
       <Header rootClassName="header-root-class-name"></Header>

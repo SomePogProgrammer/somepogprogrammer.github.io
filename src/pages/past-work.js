@@ -16,8 +16,8 @@ const PastWork = (props) => {
   return (
     <div className="past-work-container">
       <Helmet>
-        <title>PastWork - Traveler (Template 12)</title>
-        <meta property="og:title" content="PastWork - Traveler (Template 12)" />
+        <title>PastWork - SomeProgrammer's Portfolio</title>
+        <meta property="og:title" content="PastWork - SomeProgrammer's Portfolio" />
       </Helmet>
       <Header rootClassName="header-root-class-name2"></Header>
       <header data-role="Header" className="past-work-header fixed-navbar">
