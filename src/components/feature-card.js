@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { fixComponentProps } from "../componentFunctions.js/compFuncs";
 import "./feature-card.css";
 
 const FeatureCard = (propsTable) => {
-  const props = fixComponentProps(propsTable);
+  const props = self.fixComponentProps(propsTable);
   return (
     <div className={`feature-card-feature-card ${props.rootClassName} `}>
       <svg viewBox="0 0 1097.142857142857 1024" className="feature-card-icon">

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./navigation-links2.css";
+import {memo} from "react"
 import PropTypes from "prop-types";
 
 const NavigationLinks2 = (propsTable) => {
-  const props = fixComponentProps(propsTable);
+
+  const props = self.fixComponentProps(propsTable);
 
   return (
     <nav
@@ -52,4 +54,4 @@ NavigationLinks2.propTypes = {
   WebDevelopment: PropTypes.string,
 };
 
-export default NavigationLinks2;
+export default memo(NavigationLinks2);

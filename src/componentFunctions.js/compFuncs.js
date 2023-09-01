@@ -1,25 +1,38 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 
-export function fixComponentProps(propsTable) {
-  const [props, setProps] = useState(propsTable);
-  useEffect(() => {
-    setProps((previousState) => {
-      if (props.rootClassName) {
-        return {
-          ...previousState,
-          rootClassName: props.rootClassName
+const compFuncs =  {
 
-            .replace(/([A-Z]+)/g, "-$1")
-            .replace(/^,/, "")
-            .toLowerCase(),
-        };
-      } else if (props["rootClassName"] == null) {
-        return {
-          ...previousState,
-        };
-      }
-    });
-  }, []);
+  fixComponentProps: (propsTable) => {
+    const [props, setProps] = useState(propsTable);
+    useEffect(() => {
+      setProps((previousState) => {
+        if (props.rootClassName) {
+          return {
+            ...previousState,
+            rootClassName: props.rootClassName
 
-  return props;
+              .replace(/([A-Z]+)/g, "-$1")
+              .replace(/^,/, "")
+              .toLowerCase(),
+          };
+        } else if (props["rootClassName"] == null) {
+          return {
+            ...previousState,
+          };
+        } else {
+          return {
+            ...previousState
+          }
+        }
+      });
+    }, []);
+    
+    return props;
+  }
+
 }
+
+  
+self.fixComponentProps = compFuncs.fixComponentProps
+
+

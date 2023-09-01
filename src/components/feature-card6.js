@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./feature-card6.css";
 
 const FeatureCard6 = (propsTable) => {
-  var props = window.fixComponentProps(propsTable);
+  var props = self.fixComponentProps(propsTable);
   if (props) {
     props = props;
   } else {

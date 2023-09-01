@@ -1,24 +1,19 @@
-import React from "react";
-
+import {memo, useMemo} from "react";
 import PropTypes from "prop-types";
 
 import NavigationLinks2 from "./navigation-links2";
 import "./header.css";
-import { useLocation } from "react-router-dom";
+
 
 const Header = (propsTable) => {
-  var props = window.fixComponentProps(propsTable);
+  var props = self.fixComponentProps(propsTable);
   var curRoute = window.location.pathname
   if (curRoute  == "/") {
     curRoute = "About-Me"
   } else {
     curRoute = curRoute.replace("/","")
   }
-  if (props) {
-    props = props;
-  } else {
-    props = propsTable;
-  }
+  
 
   return (
     <header className="header-header fixed-navbar">
@@ -62,4 +57,4 @@ Header.propTypes = {
   rootClassName: PropTypes.string,
 };
 
-export default Header;
+export default memo(Header);

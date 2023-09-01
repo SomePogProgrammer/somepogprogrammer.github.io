@@ -12,9 +12,7 @@ import BehindTheScenes from "./pages/behind-the-scenes";
 import Page from "./pages/page";
 import AboutMe from "./pages/about-me";
 import WebDevelopment from "./pages/web-development";
-import { fixComponentProps } from "./componentFunctions.js/compFuncs";
-window.fixComponentProps = fixComponentProps;
-
+import {} from "./componentFunctions.js/compFuncs"
 
 function App() {
   return (

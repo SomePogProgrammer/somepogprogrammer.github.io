@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import Header from '../components/header'
 import './behind-the-scenes.css'
 
-const BehindTheScenes = (props) => {
+const BehindTheScenes = () => {
   return (
     <div className="behind-the-scenes-container">
       <Helmet>

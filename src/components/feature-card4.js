@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./feature-card4.css";
 
 const FeatureCard4 = (propsTable) => {
-  const props = window.fixComponentProps(propsTable);
+  const props = self.fixComponentProps(propsTable);
   return (
     <div className={`feature-card4-feature-card ${props.rootClassName} `}>
       <svg viewBox="0 0 1024 1024" className="feature-card4-icon">
