@@ -1,7 +1,7 @@
 {
   "name": "traveler-template-12",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "homepage": "https://somepogprogrammer.github.io/SomeProgrammer-s-ReactJS-Portfolio/",
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
