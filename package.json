@@ -2,10 +2,9 @@
   "name": "someprogrammers_reactjs_portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://somepogprogrammer.github.io/SomeProgrammer-s-ReactJS-Portfolio/",
+  "homepage": "http://somepogprogrammer.github.io/SomeProgrammer-s-ReactJS-Portfolio/",
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
-    "dangerous-html": "0.1.13",
     "prop-types": "15.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,6 +13,7 @@
   },
   "scripts": {
     "start": "craco start ",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test --env=jsdom",
@@ -21,7 +21,7 @@
     "tailwind": "tailwindcss -o style.css -c ./tailwind.config.js && tailwindcss  src/index.css -c ./tailwind.config.js"
   },
   "engines": {
-    "node": "16.x"
+    "node": "20.5.1"
   },
   "browserslist": {
     "production": [
@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1"
   }
 }
