@@ -1,6 +1,6 @@
 /* © | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED © */
 
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 import "./index.css";
