@@ -16,6 +16,7 @@ import {} from "./componentFunctions.js/compFuncs"
 import React from "react";
 
 function App() {
+  console.log("edited path")
   return (
     <React.StrictMode>
     <HashRouter>
