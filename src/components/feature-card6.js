@@ -28,7 +28,7 @@ const FeatureCard6 = (propsTable) => {
 FeatureCard6.defaultProps = {
   rootClassName: "",
   description:
-    "View my past work! Like my APIs, Datastores, Servers, Web applications, Websites, and other development items!Past Work",
+    "View my past work! Like my APIs, Datastores, Servers, Web applications, Websites, and other development items!",
   PastWork: "View",
   title: "Web Development",
 };
