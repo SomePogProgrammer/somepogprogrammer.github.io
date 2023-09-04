@@ -8,7 +8,8 @@ import "./header.css";
 const Header = (propsTable) => {
   var props = self.fixComponentProps(propsTable);
   var curRoute = window.location.pathname
-  if (curRoute  == "/") {
+  console.log(curRoute)
+  if (curRoute  == "/" || curRoute == "/#/") {
     curRoute = "About-Me"
   } else {
     curRoute = curRoute.replace("/","")
