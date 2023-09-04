@@ -1,8 +1,8 @@
 {
   "name": "someprogrammers_reactjs_portfolio",
-  "version": "1.0.0",
+  "version": "7.5.0",
   "private": true,
-  "homepage": "http://somepogprogrammer.github.io/SomeProgrammer-s-ReactJS-Portfolio/",
+  "homepage": "http://somepogprogrammer.github.io/",
   "dependencies": {
     "@craco/craco": "^7.0.0-alpha.0",
     "prop-types": "15.7.2",
