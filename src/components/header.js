@@ -1,4 +1,4 @@
-import {memo, useMemo} from "react";
+import {memo} from "react";
 import PropTypes from "prop-types";
 
 import NavigationLinks2 from "./navigation-links2";
@@ -7,9 +7,9 @@ import "./header.css";
 
 const Header = (propsTable) => {
   var props = self.fixComponentProps(propsTable);
-  var curRoute = window.location.pathname
-  console.log(curRoute)
-  if (curRoute  == "/" || curRoute == "/#/") {
+  var curRoute = window.location.href.split("/#")[1]
+
+  if (curRoute  == "/") {
     curRoute = "About-Me"
   } else {
     curRoute = curRoute.replace("/","")

@@ -20,14 +20,14 @@ function App() {
     <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route element={<Login />} path="login" />
-        <Route element={<Home />} path="/home" />
-        <Route element={<ContactMe />} path="/contact-me" />
-        <Route element={<PastWorkHTML />} path="/past-work" />
-        <Route element={<BehindTheScenes />} path="/behind-the-scenes" />
-        <Route element={<AboutMe />} path="/" />
-        <Route element={<Page />} path="**" />
-        <Route element={<WebDevelopment />} path="/web-development" />
+        <Route element={<Login />} exact path="login" />
+        <Route element={<Home />} exact path="/home" />
+        <Route element={<ContactMe />} exact path="/contact-me" />
+        <Route element={<PastWorkHTML />} exact path="/past-work" />
+        <Route element={<BehindTheScenes />} exact path="/behind-the-scenes" />
+        <Route element={<AboutMe />} exact path="/" />
+        <Route element={<Page />} exact path="*" />
+        <Route element={<WebDevelopment />} exact path="/web-development" />
       </Routes>
     </HashRouter>
     </React.StrictMode>
