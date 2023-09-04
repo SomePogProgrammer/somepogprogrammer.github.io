@@ -13,9 +13,11 @@ import Page from "./pages/page";
 import AboutMe from "./pages/about-me";
 import WebDevelopment from "./pages/web-development";
 import {} from "./componentFunctions.js/compFuncs"
+import React from "react";
 
 function App() {
   return (
+    <React.StrictMode>
     <HashRouter>
       <Routes>
         <Route element={<Login />} path="login" />
@@ -28,6 +30,7 @@ function App() {
         <Route element={<WebDevelopment />} path="/web-development" />
       </Routes>
     </HashRouter>
+    </React.StrictMode>
   );
 }
 const container = document.getElementById("root");
