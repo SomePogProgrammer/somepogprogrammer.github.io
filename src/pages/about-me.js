@@ -14,6 +14,8 @@ import FeatureCard6 from "../components/feature-card6";
 import FeatureCard7 from "../components/feature-card7";
 import FeatureCard8 from "../components/feature-card8";
 import "./css/about-me.css";
+import "../components/css/codeEmbed.css"
+import CodeEmbed from "../components/codeEmbed";
 
 const AboutMe = (props) => {
   return (
@@ -144,6 +146,7 @@ const AboutMe = (props) => {
       <div className="about-me-banner1"></div>
       <div className="about-me-container3">
         <div className="about-me-container4"></div>
+     
         <div className="about-me-container5"></div>
       </div>
       <div className="about-me-banner2"></div>

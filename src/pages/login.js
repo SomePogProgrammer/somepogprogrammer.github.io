@@ -11,6 +11,7 @@ const Login = (props) => {
         <title>Login - SomeProgrammer's Portfolio</title>
         <meta property="og:title" content="Login - SomeProgrammer's Portfolio" />
       </Helmet>
+      
       <div className="login-container1">
         <h2 className="login-text">
           <span>Company/Employer</span>

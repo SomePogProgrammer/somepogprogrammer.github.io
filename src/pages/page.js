@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
+
 import "./css/page.css";
 
 const Page = (props) => {
@@ -10,7 +11,10 @@ const Page = (props) => {
       <Helmet>
         <title>404 Page Not Found?</title>
         <meta property="og:title" content="404 Page Not Found" />
+       
+       
       </Helmet>
+      
       <div class="page-container">
         <div class="page-container1">
           <h1 class="page-text inputOnContactMe">
