@@ -16,9 +16,9 @@ import {} from "./componentFunctions.js/compFuncs"
 import React from "react";
 
 function App() {
-
+  console.log("not strict")
   return (
-    <React.StrictMode>
+
     <HashRouter>
       <Routes>
         <Route element={<Login />} exact path="login" />
@@ -31,7 +31,7 @@ function App() {
         <Route element={<WebDevelopment />} exact path="/web-development" />
       </Routes>
     </HashRouter>
-    </React.StrictMode>
+
   );
 }
 const container = document.getElementById("root");
