@@ -26,7 +26,7 @@ function App() {
         <Route element={<PastWorkHTML />} path="/past-work" />
         <Route element={<BehindTheScenes />} path="/behind-the-scenes" />
         <Route element={<AboutMe />} path="/" />
-        <Route element={<Page />} path="*" />
+        <Route element={<Page />} path="**" />
         <Route element={<WebDevelopment />} path="/web-development" />
       </Routes>
     </HashRouter>
