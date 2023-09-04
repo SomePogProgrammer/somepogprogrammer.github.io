@@ -25,7 +25,7 @@ function App() {
         <Route element={<ContactMe />} exact path="/contact-me" />
         <Route element={<PastWorkHTML />} exact path="/past-work" />
         <Route element={<BehindTheScenes />} exact path="/behind-the-scenes" />
-        <Route element={<AboutMe />} exact path="/" />
+        <Route element={<AboutMe />}  path="/" />
         <Route element={<Page />} exact path="*" />
         <Route element={<WebDevelopment />} exact path="/web-development" />
       </Routes>
