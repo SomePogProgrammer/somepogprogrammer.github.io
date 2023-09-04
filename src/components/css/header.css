@@ -30,7 +30,7 @@
   justify-content: space-between;
 }
 .header-login {
-  transition: 0.3s;
+  transition: 1s;
   border-width: 0px;
   margin-right: var(--dl-space-space-twounits);
 }
@@ -38,6 +38,22 @@
   color: white;
   background-color: var(--dl-color-gray-black);
 }
+.header-login::after {
+  width: 100%;
+  content: "‎ ‎ ‎ ‎‎‎Login‎ ‎ ‎ ‎ ‎"
+}
+.header-login:hover::after {
+
+  content: "Coming Soon";
+
+}
+.header-register::after {
+  content: "‎ ‎ ‎ ‎ Register ‎ ‎ ‎ ‎ ‎  "
+}
+.header-register:hover::after {
+ content: "Coming Soon";
+}
+  
 .header-register {
   transition: 0.3s;
 }

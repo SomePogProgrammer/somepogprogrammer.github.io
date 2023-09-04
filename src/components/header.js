@@ -34,8 +34,8 @@ const Header = (propsTable) => {
         ></NavigationLinks2>
       </div>
       <div className="header-btn-group">
-        <button className="header-login button">{props.Login}</button>
-        <button className="header-register button">{props.Register}</button>
+        <button className="header-login button" content={props.Login} ></button>
+        <button className="header-register button" content={props.Register} ></button> 
       </div>
       <h1 className="header-page-heading fixed-navbar">
         <span className="">{curRoute}</span>
