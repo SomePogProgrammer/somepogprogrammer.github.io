@@ -1,7 +1,7 @@
 /* © | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED © */
 
 import ReactDOM from "react-dom";
-import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import "./index.css";
 import Login from "./pages/login";
@@ -16,7 +16,7 @@ import {} from "./componentFunctions.js/compFuncs"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Login />} path="login" />
         <Route element={<Home />} path="/home" />
@@ -27,7 +27,7 @@ function App() {
         <Route element={<Page />} path="*" />
         <Route element={<WebDevelopment />} path="/web-development" />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 const container = document.getElementById("root");
