@@ -3,7 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
-import './contact-me.css'
+import './css/contact-me.css'
 
 const ContactMe = (props) => {
   return (

@@ -1,7 +1,7 @@
 import {memo} from "react";
 import PropTypes from "prop-types";
 
-import "./sidebar.css";
+import "./css/sidebar.css";
 
 const Sidebar = (propsTable) => {
   const props = fixComponentProps(propsTable);

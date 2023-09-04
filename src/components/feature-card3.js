@@ -2,7 +2,7 @@ import {memo} from "react";
 
 import PropTypes from 'prop-types'
 
-import './feature-card3.css'
+import './css/feature-card3.css'
 
 const FeatureCard3 = (props) => {
   return (

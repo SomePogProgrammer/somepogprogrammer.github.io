@@ -1,7 +1,7 @@
 import {memo} from "react";
 import PropTypes from "prop-types";
 
-import "./testimonial-card2.css";
+import "./css/testimonial-card2.css";
 
 const TestimonialCard2 = (propsTable) => {
   const props = fixComponentProps(propsTable);

@@ -3,7 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
-import './behind-the-scenes.css'
+import './css/behind-the-scenes.css'
 
 const BehindTheScenes = () => {
   return (

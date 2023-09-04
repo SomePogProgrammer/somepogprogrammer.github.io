@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./navigation-links2.css";
+import "./css/navigation-links2.css";
 import {memo} from "react"
 import PropTypes from "prop-types";
 

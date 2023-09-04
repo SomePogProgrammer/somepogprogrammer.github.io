@@ -1,7 +1,7 @@
 import {memo} from "react";
 import PropTypes from "prop-types";
 
-import "./feature-card7.css";
+import "./css/feature-card7.css";
 
 const FeatureCard7 = (propsTable) => {
   const props = self.fixComponentProps(propsTable);

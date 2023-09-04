@@ -13,7 +13,7 @@ import FeatureCard5 from "../components/feature-card5";
 import FeatureCard6 from "../components/feature-card6";
 import FeatureCard7 from "../components/feature-card7";
 import FeatureCard8 from "../components/feature-card8";
-import "./about-me.css";
+import "./css/about-me.css";
 
 const AboutMe = (props) => {
   return (

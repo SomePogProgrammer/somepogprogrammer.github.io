@@ -9,8 +9,8 @@ import TestimonialCard2 from "../components/testimonial-card2";
 import TestimonialCard3 from "../components/testimonial-card3";
 import TestimonialCard4 from "../components/testimonial-card4";
 
-import "./past-work.css";
-import "../components/navigation-links2.css";
+import "./css/past-work.css";
+
 
 const PastWork = (props) => {
   return (

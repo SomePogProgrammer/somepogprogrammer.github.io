@@ -2,7 +2,7 @@ import {memo} from "react";
 import PropTypes from "prop-types";
 
 import NavigationLinks2 from "./navigation-links2";
-import "./header.css";
+import "./css/header.css";
 
 
 const Header = (propsTable) => {

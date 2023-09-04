@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import "./page.css";
+import "./css/page.css";
 
 const Page = (props) => {
   return (
