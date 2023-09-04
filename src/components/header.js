@@ -11,8 +11,11 @@ const Header = (propsTable) => {
 
   if (curRoute  == "/" || curRoute == "") {
     curRoute = "About-Me"
-  } else if (curRoute !== null) {
-    curRoute = curRoute.replace("/")
+  } else if (!curRoute) {
+    curRoute = "About-Me"
+  }
+  else if (curRoute !== null ) {
+    curRoute = curRoute.replace("/","")
   }
   
 
