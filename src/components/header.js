@@ -9,7 +9,7 @@ const Header = (propsTable) => {
   var props = self.fixComponentProps(propsTable);
   var curRoute = window.location.href.split("/#")[1]
 
-  if (curRoute  == "/") {
+  if (curRoute  == "/" || curRoute == "") {
     curRoute = "About-Me"
   } else if (curRoute !== null) {
     curRoute = curRoute.replace("/")
