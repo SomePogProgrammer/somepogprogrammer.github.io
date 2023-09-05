@@ -1,5 +1,5 @@
 import {memo} from "react";
-
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 import "./css/feature-card6.css";
@@ -19,7 +19,8 @@ const FeatureCard6 = (propsTable) => {
       <h2 className="feature-card6-text">{props.title}</h2>
       <span className="feature-card6-text1">{props.description}</span>
       <button className="feature-card6-past-work button">
-        {props.PastWork}
+        <Link to={"/web-development"}>{props.PastWork}</Link>
+       
       </button>
     </div>
   );

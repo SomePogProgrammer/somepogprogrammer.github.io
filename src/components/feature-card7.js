@@ -1,6 +1,6 @@
 import {memo} from "react";
 import PropTypes from "prop-types";
-
+import {Link} from "react-router-dom"
 import "./css/feature-card7.css";
 
 const FeatureCard7 = (propsTable) => {
@@ -13,7 +13,7 @@ const FeatureCard7 = (propsTable) => {
       <h2 className="feature-card7-text">{props.title}</h2>
       <span className="feature-card7-text1">{props.description}</span>
       <button className="feature-card7-past-work button">
-        {props.PastWork}
+      <Link to={"/contact-me"}>{props.PastWork}</Link>
       </button>
     </div>
   );
