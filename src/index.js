@@ -12,7 +12,7 @@ import BehindTheScenes from "./pages/behind-the-scenes";
 import Page from "./pages/page";
 import AboutMe from "./pages/about-me";
 import WebDevelopment from "./pages/web-development";
-import {} from "./componentUtilities.js/compFuncs"
+import {} from "./componentUtilities/compFuncs"
 import React from "react";
 
 function App() {
