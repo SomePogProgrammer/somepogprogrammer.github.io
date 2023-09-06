@@ -16,3 +16,4 @@ Embed.defaultProps = {
 Embed.PropTypes = {
     language: PropTypes.string
 }
+export default Embed

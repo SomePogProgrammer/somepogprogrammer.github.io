@@ -14,7 +14,7 @@ import FeatureCard6 from "../components/feature-card6";
 import FeatureCard7 from "../components/feature-card7";
 import FeatureCard8 from "../components/feature-card8";
 import "./css/about-me.css";
-import Embed from "../components/codeEmbed";
+import Embed from "../componentUtilities/embed";
 
 const AboutMe = (props) => {
   return (
