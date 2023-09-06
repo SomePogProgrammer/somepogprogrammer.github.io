@@ -145,7 +145,7 @@ const AboutMe = (props) => {
       <div className="about-me-banner1"></div>
       <div className="about-me-container3">
         <div className="about-me-container4"></div>
-          <Embed language="React TSX">
+          <Embed language="language-tsx">
             export default function e() {
                 
             }

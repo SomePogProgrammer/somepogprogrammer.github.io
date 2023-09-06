@@ -3,8 +3,10 @@ import "./prism.css"
 
 function Embed(props) {
     return (
-        <pre>
-            <code className={props.language}></code>
+        <pre className="-lan2guage-react-tsx">
+            <code className="-lan2guage-react-tsx">
+            
+            </code>
         </pre>
     )
 }
