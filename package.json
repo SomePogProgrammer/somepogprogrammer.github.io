@@ -39,5 +39,10 @@
   "devDependencies": {
     "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "description": "© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©",
+  "main": "craco.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
