@@ -6,4 +6,4 @@ const data = {
     "Testing": true
 }
 
-dbFuncs.writeDB("./api/Databases/Portfolio_Data.json",data,"Job_Requests")
+dbFuncs.writeDB("server/api/Databases/Portfolio_Data.json",data,"Job_Requests")
