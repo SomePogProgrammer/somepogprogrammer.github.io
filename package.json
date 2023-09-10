@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://somepogprogrammer.github.io/#/",
   "dependencies": {
-    "@craco/craco": "^7.0.0-alpha.0",
+    "craco": "^0.0.3",
     "next": "^13.4.19",
     "prop-types": "15.7.2",
     "react": "^18.2.0",
@@ -22,7 +22,7 @@
     "tailwind": "tailwindcss -o style.css -c ./tailwind.config.js && tailwindcss  src/index.css -c ./tailwind.config.js"
   },
   "engines": {
-    "node": "20.5.1"
+    "node": ">=20.0.1"
   },
   "browserslist": {
     "production": [
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1"
   },
