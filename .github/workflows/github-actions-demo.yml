@@ -7,3 +7,4 @@ jobs:
     steps:
         - run: cd ./backend-node
         - run: npm start
+        
