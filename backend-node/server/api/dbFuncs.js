@@ -11,6 +11,7 @@ function writeDB(dbName, obj, table) {
     if (!obj) return console.log('Please provide data to save')
     try {
       
+        
         var oldData = readDB(dbName)
         var dir = oldData
 
