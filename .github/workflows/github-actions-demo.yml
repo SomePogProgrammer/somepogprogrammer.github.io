@@ -5,5 +5,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
-        - run: cd backend-node
+        - run: cd ./backend-node
         - run: npm start
