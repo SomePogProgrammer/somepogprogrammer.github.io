@@ -156,10 +156,10 @@
   background-color: #ffffff;
 }
 .web-development-container04:hover {
-  color: transparent;
+  color: white;
   transform: translateX(-20px) translateY(-20px);
   box-shadow: 15px 15px 10px 0px #343232;
-  backgrounde: linear-gradient(315deg, rgb(0, 0, 0) 2.00%,rgb(151, 151, 151) 98.00%);
+  background: linear-gradient(315deg, rgb(0, 0, 0) 2.00%,rgb(151, 151, 151) 98.00%);
   background-color: #262626;
 }
 .web-development-icon06 {
@@ -208,7 +208,7 @@
   background-color: #ffffff;
 }
 .web-development-container06:hover {
-  color: transparent;
+  color: white;
   transform: translateX(-20px) translateY(-20px);
   background: linear-gradient(315deg, rgb(0, 0, 0) 2.00%,rgb(151, 151, 151) 98.00%);
   box-shadow: 15px 15px 10px 0px #343232;

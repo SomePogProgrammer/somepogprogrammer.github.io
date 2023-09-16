@@ -14,7 +14,8 @@ import FeatureCard6 from "../components/feature-card6";
 import FeatureCard7 from "../components/feature-card7";
 import FeatureCard8 from "../components/feature-card8";
 import "./css/about-me.css";
-import Embed from "../componentUtilities/embed";
+import CodeEmbed from "../componentUtilities/codeEmbed";
+
 
 const AboutMe = (props) => {
   return (
@@ -145,12 +146,113 @@ const AboutMe = (props) => {
       <div className="about-me-banner1"></div>
       <div className="about-me-container3">
         <div className="about-me-container4"></div>
-          <Embed language="language-tsx">
-            export default function e() {
-                
+       
+        <div className="about-me-container5">
+          <CodeEmbed language="tsx" exStyling={{ clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)', overflow: 'hidden', overflowX: 'hidden', overflowY: 'hidden', height: "100%",overflow: 'hidden', backgroundColor: "#262626" }}
+            codeToEmbed={`
+        export default function App() {
+
+        return (
+          <BrowserRouter>
+          <Routes>
+            <Route
+              path="*"
+              element={
+              <>
+                <Layout />
+                <NoPage className="NoPage" />
+              </>
             }
-          </Embed>
-        <div className="about-me-container5"></div>
+
+            ></Route>
+            <Route
+            index
+            element={
+            <>
+              <Home />
+              <Layout />
+            </>
+            }
+
+            />
+            <Route
+              path="pages/"
+              element={
+              <>
+                <Layout />
+                <NoPage />
+              </>
+            }
+
+            ></Route>
+
+            <Route path="pages" element={<Layout />
+          }>
+          <Route path="blogs" element={<Blogs
+            />} />
+            <Route path="contact" element={<Contact
+              />} />
+              <Route path="*" element={<NoPage />
+            } />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+        );
+      }
+`}></CodeEmbed>
+ <CodeEmbed language="tsx" exStyling={{ clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)', overflow: 'hidden', overflowX: 'hidden', overflowY: 'hidden', height: "100%",overflow: 'hidden', backgroundColor: "#262626" }}
+            codeToEmbed={`
+            export default function App() {
+
+              return (
+                <BrowserRouter>
+                <Routes>
+                  <Route
+                    path="*"
+                    element={
+                    <>
+                      <Layout />
+                      <NoPage className="NoPage" />
+                    </>
+                  }
+      
+                  ></Route>
+                  <Route
+                  index
+                  element={
+                  <>
+                    <Home />
+                    <Layout />
+                  </>
+                  }
+      
+                  />
+                  <Route
+                    path="pages/"
+                    element={
+                    <>
+                      <Layout />
+                      <NoPage />
+                    </>
+                  }
+      
+                  ></Route>
+      
+                  <Route path="pages" element={<Layout />
+                }>
+                <Route path="blogs" element={<Blogs
+                  />} />
+                  <Route path="contact" element={<Contact
+                    />} />
+                    <Route path="*" element={<NoPage />
+                  } />
+                </Route>
+              </Routes>
+            </BrowserRouter>
+              );
+            }
+`}></CodeEmbed>
+        </div>
       </div>
       <div className="about-me-banner2"></div>
       <div className="about-me-features1">
