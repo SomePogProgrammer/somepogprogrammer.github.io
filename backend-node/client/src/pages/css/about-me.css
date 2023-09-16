@@ -849,6 +849,7 @@
     width: 50%;
     height: 605px;
     max-width: 40%;
+    overflow: hidden;
   }
   .about-me-banner2 {
     border-style: hidden;

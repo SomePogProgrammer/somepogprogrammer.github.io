@@ -84,6 +84,7 @@ const WebDevelopment = (props) => {
               />
             </span>
           </div>
+          
           <div className="web-development-container04">
             <svg viewBox="0 0 1024 1024" className="web-development-icon06">
               <path d="M512 0c-282.77 0-512 71.634-512 160v128c0 88.366 229.23 160 512 160s512-71.634 512-160v-128c0-88.366-229.23-160-512-160z"></path>
@@ -94,14 +95,16 @@ const WebDevelopment = (props) => {
               <span>Databases</span>
               <br></br>
             </h1>
-            <div className="web-development-container05"></div>
+            <div className="web-development-container05">
+            
+            </div>
             <span className="web-development-text18">
               <span>
-                We offer database apis, I won&apos;t provide the database, in
+                We offer database apis, I do not provide a database server or host! In
                 all the websites that use databases, I will be using a local
                 database on my computer, as proof of concept, once bought you
-                must provide the database, or I can instruct you on how to
-                create one.
+                must provide the database, if needed I can instruct you on how to
+                create one or connect it to a database service.
               </span>
               <br></br>
               <br></br>
@@ -123,7 +126,7 @@ const WebDevelopment = (props) => {
               </span>
               <br></br>
               <br></br>
-              <span>Example, shows on hover!</span>
+              
               <br></br>
             </span>
             <div className="web-development-container07"></div>
