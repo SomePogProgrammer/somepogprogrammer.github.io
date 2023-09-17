@@ -13,12 +13,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.15.0",
-    "serve": "^14.2.1"
+    "react-router-dom": "^6.15.0"
   },
   "scripts": {
-    "start": "cd ./client && craco start",
-    "serve": "cd ./client && craco build &&  serve -s build",
+    "start": "node server/server.js && nodemon --ext *",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "craco build",
@@ -43,8 +41,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0",
-    "react-scripts": "^5.0.1",
-    "webpack-dev-server": "^4.15.1"
+    "react-scripts": "^5.0.1"
   },
   "description": "© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©",
   "main": "craco.config.js",

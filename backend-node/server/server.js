@@ -6,6 +6,8 @@ const app = express()
 const PORT = process.env.PORT || 5000;
 const dbFuncs = require("dbfuncs")
 
+
+
 app.post("/api/database", (req, res) => {
   res.json({message: "Sent Post Successfully"})
 });
@@ -20,14 +22,14 @@ app.get("/api/database", (req, res) => {
 
 
 
-app.use(express.Router(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/public", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/public"));
 });
 
 app.get('*', (req,res) =>{
-  res.sendFile(path.join(__dirname,'../client/build/',"index.html"));
+  res.sendFile(path.join(__dirname,'../client/build/'));
 });
 
 app.listen(PORT, () => {

@@ -257,7 +257,7 @@ ContactMe.apiRequest = function() {
     Error.new(err)
   })
  },[])*/
- alert("hello")
+ alert("hello x5")
 
 }
 export default ContactMe
