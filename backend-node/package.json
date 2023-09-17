@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node server/server.js",
     "test": "node server/setTestDataEntry.js"
   },
   "keywords": [],
@@ -11,7 +11,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dbfuncs": "file:dbFuncs",
     "express": "^4.18.2",
-    "highlight.js": "^11.8.0"
+    "highlight.js": "^11.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

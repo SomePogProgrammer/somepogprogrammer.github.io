@@ -1,86 +1,17 @@
 {
     "Job_Requests": {
-        "id_MTEuMjMzNTcyNzgxMjc1NTM1UmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MTEuMjMzNTcyNzgxMjc1NTM1UmVhY3QuSlM"
-        },
-        "id_MjYuOTA5MDY2MzkwMDg4Mzc3UmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MjYuOTA5MDY2MzkwMDg4Mzc3UmVhY3QuSlM"
-        },
-        "id_MjkuNzc2NDQ1MzE5Mjk1NjMyUmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MjkuNzc2NDQ1MzE5Mjk1NjMyUmVhY3QuSlM"
-        },
-        "id_NDcuMTk1MTQ2MTI0ODk5NTRSZWFjdC5KUw": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NDcuMTk1MTQ2MTI0ODk5NTRSZWFjdC5KUw"
-        },
-        "id_NDUuMzE5MTExNTgyNDE4MDFSZWFjdC5KUw": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NDUuMzE5MTExNTgyNDE4MDFSZWFjdC5KUw"
-        },
-        "id_NDMuMzMxNzY4OTU2ODczNlJlYWN0LkpT": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NDMuMzMxNzY4OTU2ODczNlJlYWN0LkpT"
-        },
-        "id_NDIuNzU5OTE4OTAzOTQ3OTM0UmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NDIuNzU5OTE4OTAzOTQ3OTM0UmVhY3QuSlM"
-        },
-        "id_MjQuNzE5MTUwMjY0NDAzMDA1UmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MjQuNzE5MTUwMjY0NDAzMDA1UmVhY3QuSlM"
-        },
-        "id_NTkuNTgyNjY2ODMzMjQ5NzhSZWFjdC5KUw": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NTkuNTgyNjY2ODMzMjQ5NzhSZWFjdC5KUw"
-        },
-        "id_MTguNzA4NjQxOTk0NDExNDM3UmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MTguNzA4NjQxOTk0NDExNDM3UmVhY3QuSlM"
-        },
-        "id_MTYuNjEzODM1OTMzODc3MjMzUmVhY3QuSlM": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_MTYuNjEzODM1OTMzODc3MjMzUmVhY3QuSlM"
-        },
-        "id_NjYuOTUwODMzMTU0NjA5NjhSZWFjdC5KUw": {
-            "Comp": "e",
-            "Pay": "None lmao",
-            "_id": "id_NjYuOTUwODMzMTU0NjA5NjhSZWFjdC5KUw"
-        },
-        "id_MzAuMzgxMDY2NTUyODYxMDVSZWFjdC5KUw": {
+        "id_Ni4zMzA3NDIyNTQyMTY5MzQ1UmVhY3QuSlM": {
             "Comp": "e",
             "Pay": "None lmao",
             "Testing": true,
-            "_id": "id_MzAuMzgxMDY2NTUyODYxMDVSZWFjdC5KUw"
+            "_id": "id_Ni4zMzA3NDIyNTQyMTY5MzQ1UmVhY3QuSlM"
+        },
+        "id_MTcuNTQyNTU3OTMyMzM2MjI2UmVhY3QuSlM": {
+            "Comp": "e",
+            "Pay": "None lmao",
+            "Testing": true,
+            "_id": "id_MTcuNTQyNTU3OTMyMzM2MjI2UmVhY3QuSlM"
         }
     },
-    "Interview_Requests": {},
-    "id_NTMuMTcxMDU2ODYzNDY1NjVSZWFjdC5KUw": {
-        "Comp": "e",
-        "Pay": "None lmao",
-        "_id": "id_NTMuMTcxMDU2ODYzNDY1NjVSZWFjdC5KUw"
-    },
-    "id_MjguMzIxMzkyNTI2ODE0NTYzUmVhY3QuSlM": {
-        "Comp": "e",
-        "Pay": "None lmao",
-        "_id": "id_MjguMzIxMzkyNTI2ODE0NTYzUmVhY3QuSlM"
-    },
-    "id_NDMuOTM3MzAwMzM2NDA4MDE1UmVhY3QuSlM": {
-        "Comp": "e",
-        "Pay": "None lmao",
-        "_id": "id_NDMuOTM3MzAwMzM2NDA4MDE1UmVhY3QuSlM"
-    }
+    "Interview_Requests": {}
 }

@@ -5,8 +5,7 @@ import "./prism.css"
 import PropTypes from "prop-types"
 
 function CodeEmbed(props) {
-  
-  
+
     return (
       
       <SyntaxHighlighter language={props.language} customStyle={props.exStyling}  >

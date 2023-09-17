@@ -1,4 +1,4 @@
-const dbFuncs = require("./api/dbFuncs")
+const dbFuncs = require("dbfuncs")//require("./api/dbFuncs")
 
 const data = {
     "Comp": "e",

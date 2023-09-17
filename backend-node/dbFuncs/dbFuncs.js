@@ -1,16 +1,15 @@
 
 /** 
  *
- * @namespace global
  * 
  * 
+ * @package
  * 
 */
 
-const fs = require('fs')
-
 
 function readDB(dbName) {
+
     // read JSON object from file
     const data = fs.readFileSync(dbName, 'utf8')
     return JSON.parse(data)
@@ -45,4 +44,5 @@ function writeDB(dbName, obj, table) {
 
 exports.readDB = readDB
 exports.writeDB = writeDB
+
 

@@ -1,11 +1,12 @@
-import React from 'react'
-
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
-
 import Header from '../components/header'
+import axios from "axios"
+
 import './css/contact-me.css'
 
-const ContactMe = (props) => {
+const ContactMe = () => {
+
   return (
     <div className="contact-me-container">
       <Helmet>
@@ -240,11 +241,23 @@ const ContactMe = (props) => {
             autoComplete="off"
             className="contact-me-job-description1 input inputOnContactMe"
           />
-          <button className="contact-me-send-offer1 button">Send Offer</button>
+          <button onClick={ContactMe.apiRequest} className="contact-me-send-offer1 button">Send Offer</button>
         </div>
       </div>
     </div>
   )
 }
 
+ContactMe.apiRequest = function() {
+ useEffect(() => {
+  axios.get("http://localhost:5000")
+  .then(res => {
+    console.log(res.data)
+  }).catch(err => {
+    Error.new(err)
+  })
+ },[])
+
+}
 export default ContactMe
+
