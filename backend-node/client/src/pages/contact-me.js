@@ -249,14 +249,15 @@ const ContactMe = () => {
 }
 
 ContactMe.apiRequest = function() {
- useEffect(() => {
+ /*useEffect(() => {
   axios.get("http://localhost:5000")
   .then(res => {
     console.log(res.data)
   }).catch(err => {
     Error.new(err)
   })
- },[])
+ },[])*/
+ alert("hello")
 
 }
 export default ContactMe
