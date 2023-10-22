@@ -1,4 +1,4 @@
-© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©
+© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
 
 # --------- ATTENTION ---------
 
@@ -6,7 +6,7 @@ Copyright © | All Rights Reserved
 
 This project, and it's corresponding code/repository is protected by copyright. 
 
-I "SomePogProgrammer" reserve all rights to this repository and it's code, 
+I "SomePogProgrammer/Quincy M. Dack" reserve all rights to this repository and it's code, 
 under no circumstances may you feature my portfolio's code in any personal, private, or educational application. 
 
 
@@ -21,4 +21,4 @@ You may not clone, fork, or use any of the code under this project or inside thi
 
 
 
-© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©
+© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
