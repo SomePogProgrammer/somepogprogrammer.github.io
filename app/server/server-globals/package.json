@@ -1,0 +1,8 @@
+{
+  "name": "server-globals",
+  "version": "1.0.4",
+  "description": "",
+  "main": "server_globals.d.ts",
+  "author": "@SomeProgrammer/@SomePogProgrammer",
+  "license": "ISC"
+}

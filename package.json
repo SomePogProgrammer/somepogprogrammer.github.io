@@ -1,52 +1,45 @@
 {
-  "name": "someprogrammers_reactjs_portfolio",
-  "version": "7.5.0",
+  "name": "somepogprogrammer.github.io",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://somepogprogrammer.github.io/#/",
+  "types": "./app/server/server_globals.d.ts",
+  "typescript": {
+    "definition": "./app/server/server_globals.d.ts"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "craco": "^0.0.3",
-    "highlight.js": "^11.8.0",
-    "highlightjs": "^9.16.2",
-    "next": "^13.4.19",
-    "prop-types": "15.7.2",
+    "@types/node": "20.6.3",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "@types/react-helmet": "^6.1.8",
+    "axios": "^1.5.1",
+    "dbfuncs": "file:app/server/dbFuncs",
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.2",
+    "fs": "^0.0.1-security",
+    "next": "^13.5.4",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.15.0",
-    "react-syntax-highlighter": "^15.5.0"
-  },
-  "scripts": {
-    "start": "craco start ",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "craco build",
-    "test": "craco test --env=jsdom",
-    "eject": "craco eject",
-    "tailwind": "tailwindcss -o style.css -c ./tailwind.config.js && tailwindcss  src/index.css -c ./tailwind.config.js"
-  },
-  "engines": {
-    "node": ">=20.0.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-hook-form": "^7.47.0",
+    "react-router-dom": "^6.17.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "server-globals": "file:app/server/server-globals",
+    "styled-jsx": "^5.1.2",
+    "swr": "^2.2.4",
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0",
-    "gh-pages": "^6.0.0",
-    "react-scripts": "^5.0.1"
-  },
-  "description": "© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©",
-  "main": "craco.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
 }
