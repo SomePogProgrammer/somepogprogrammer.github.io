@@ -6,14 +6,6 @@ const nextConfig = {
     experimental: {
       serverActions: true,
     },
-    rewrites: async () => {
-        return [
-          {
-            source: '/',
-            destination: '/index.html',
-          },
-        ]
-    },
 }
 
 module.exports = nextConfig
