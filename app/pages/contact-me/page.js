@@ -30,7 +30,7 @@ const ContactMe = () => {
     const { register, handleSubmit } = useForm();
     var currentTime = apiFuncs.getESTLocalTime({ getRawTime: true });
     
-    const onSubmit = (data, e) => {
+    const useOnSubmit = (data, e) => {
         e.preventDefault()
         setJobRequestData(data)
         useAPIRequest_Job(e, data)
@@ -84,7 +84,7 @@ const ContactMe = () => {
             }
         }
     }
-    
+
     return (
         <div className="contact-me-container">
             <Helmet>
@@ -120,7 +120,7 @@ const ContactMe = () => {
                     </div>
                 </div>
                 <div className="contact-me-container05">
-                    <form id="jobOfferForm" className="contact-me-container05" onSubmit={handleSubmit(onSubmit)} >
+                    <form id="jobOfferForm" className="contact-me-container05" onSubmit={handleSubmit(useOnSubmit)} >
                         <h3 className="contact-me-company">
                             <span>Your Company</span>
                             <span className="contact-me-text05">*</span>
