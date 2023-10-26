@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Link from "next/link"
 
 import "./scss/feature-card5.scss";
+import NextLink from "./linkNav";
 
 const FeatureCard5 = (propsTable) => {
   var props = Object.assign(FeatureCard5.customProps, propsTable)
@@ -17,7 +18,7 @@ const FeatureCard5 = (propsTable) => {
       <h2 className="feature-card5-text">{props.title}</h2>
       <span className="feature-card5-text1">{props.description}</span>
       <button className="feature-card5-past-work button">
-      <Link href="/past-work">{props.PastWork}</Link>
+      <NextLink to={"/pages/past-work"} displayText={props.PastWork}></NextLink>
       </button>
     </div>
   );

@@ -1,6 +1,7 @@
 'use client'
 import {memo} from "react";
 import PropTypes from "prop-types";
+import NextLink from "./linkNav"
 import Link  from "next/link";
 import "./scss/feature-card8.scss";
 
@@ -14,22 +15,22 @@ const FeatureCard8 = (propsTable) => {
       </svg>
       <h2 className="feature-card8-text">{props.title}</h2>
       <span className="feature-card8-text1">{props.description}</span>
-      <button className="feature-card8-past-work button">
-      <Link href="/behind-the-scenes">{props.PastWork}</Link>
+      <button className="feature-card8-past-work button block">
+      <NextLink to={"/pages/behind-the-scenes"} resetOnNav={true}  displayText={props.BehindTheScenes} ></NextLink>
       </button>
     </div>
   );
 };
 
 FeatureCard8.customProps = {
-  PastWork: "View",
+  BehindTheScenes: "View",
   title: "Behind The Scenes",
   description:
     "Personally, as a programmer I love looking at projects and thinking how I'd program them, and seeing the code behind them is another view I enjoy. So you can gauge how I format, and write my code.",
 };
 
 FeatureCard8.propTypes = {
-  PastWork: PropTypes.string,
+  BehindTheScenes: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
 };

@@ -2,6 +2,7 @@ import {memo} from "react";
 import PropTypes from "prop-types";
 import Link from "next/link"
 import "./scss/feature-card7.scss";
+import NextLink from "./linkNav";
 
 const FeatureCard7 = (propsTable) => {
   var props = Object.assign(FeatureCard7.customProps, propsTable)
@@ -13,8 +14,8 @@ const FeatureCard7 = (propsTable) => {
       <h2 className="feature-card7-text">{props.title}</h2>
       <span className="feature-card7-text1">{props.description}</span>
       <button className="feature-card7-past-work button">
-      <Link href="/contact-me">{props.PastWork}</Link>
-      </button>
+      <NextLink to={"/pages/contact-me"} displayText={props.ContactMe} resetOnNav={true}/> 
+       </button>
     </div>
   );
 };
@@ -23,13 +24,13 @@ FeatureCard7.customProps = {
   title: "Contact Me",
   description:
     "Send me a job offer! Or get a quote, I'm always looking for ways to get more experience. Money is my last concern when I take jobs, this is my passion and I love helping people!",
-  PastWork: "View",
+  ContactMe: "View",
 };
 
 FeatureCard7.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  PastWork: PropTypes.string,
+  ContactMe: PropTypes.string,
 };
 
 export default memo(FeatureCard7);

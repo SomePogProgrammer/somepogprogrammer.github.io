@@ -3,6 +3,7 @@ import Link  from "next/link";
 import PropTypes from "prop-types";
 
 import "./scss/feature-card6.scss";
+import NextLink from "./linkNav";
 
 const FeatureCard6 = (propsTable) => {
   var props = Object.assign(FeatureCard6.customProps, propsTable)
@@ -20,8 +21,7 @@ const FeatureCard6 = (propsTable) => {
       <h2 className="feature-card6-text">{props.title}</h2>
       <span className="feature-card6-text1">{props.description}</span>
       <button className="feature-card6-past-work button">
-        <Link href={"/web-development"}>{props.PastWork}</Link>
-       
+        <NextLink to={"/pages/web-development"} displayText={props.WebDevelopment} resetOnNav={true} />
       </button>
     </div>
   );
@@ -31,14 +31,14 @@ FeatureCard6.customProps = {
   rootClassName: "",
   description:
     "View my past work! Like my APIs, Datastores, Servers, Web applications, Websites, and other development items!",
-  PastWork: "View",
+  WebDevelopment: "View",
   title: "Web Development",
 };
 
 FeatureCard6.propTypes = {
   rootClassName: PropTypes.string,
   description: PropTypes.string,
-  PastWork: PropTypes.string,
+  WebDevelopment: PropTypes.string,
   title: PropTypes.string,
 };
 

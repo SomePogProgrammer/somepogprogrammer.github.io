@@ -326,7 +326,7 @@ const ContactMe = () => {
                         className="contact-me-job-description1 input inputOnContactMe"
                     />
 
-                    <button className=" contact-me-send-offer-interview button">Send Offer</button>
+                    <button onClick={() => alert("Sorry for the trouble; however this feature is still a WIP. \nThanks for your understanding, however feel free to send a job application!")} className=" contact-me-send-offer-interview button">Send Offer</button>
                 </div>
             </div>
 
