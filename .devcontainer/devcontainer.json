@@ -1,42 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-    "name": "CodespaceRunner",
-    "dockerFile": "Dockerfile",
+	"name": "Node.js",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	}
 
-    // Configure tool-specific properties.
-    "customizations": {
-        // Configure properties specific to VS Code.
-        "vscode": {
-            // Add the IDs of extensions you want installed when the container is created.
-            "extensions": [
-                "ms-vscode.azurecli",
-                "ms-vscode.powershell",
-                "hashicorp.terraform",
-                "esbenp.prettier-vscode",
-                "tfsec.tfsec"
-            ]
-        }
-    },
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
-    // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    // "forwardPorts": [],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
 
-    // Use 'postStartCommand' to run commands each time the container is successfully started..
-    "postStartCommand": "/home/vscode/actions-runner/start.sh",
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
 
-    // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "vscode",
-    // Amend GitHub runner version with 'RUNNER_VERSION'. https://github.com/actions/runner/releases.
-    "build": {
-        "args": {
-            "UPGRADE_PACKAGES": "true",
-            "RUNNER_VERSION": "2.295.0"
-        }
-    },
-    "features": {
-        "terraform": "latest",
-        "azure-cli": "latest",
-        "git-lfs": "latest",
-        "github-cli": "latest",
-        "powershell": "latest"
-    }
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }

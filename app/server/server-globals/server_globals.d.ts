@@ -118,13 +118,15 @@ export namespace server {
 
             var date = new Date();
             const offset = date.getTimezoneOffset();
-            const OffsetSummer = new Date("2022-02-01").getTimezoneOffset();
+            const offsetSummer = new Date("2023-02-01").getTimezoneOffset();
+            const adjustedOffset = (offset/60) * -1
+            const adjustedSummerOffset = (offsetSummer/60) * -1
             var estOffset = -5;
 
-            if (OffsetSummer == offset) {
-                estOffset = -5
-            } else {
+            if (adjustedOffset == adjustedOffset) {
                 estOffset = -4
+            } else {
+                estOffset = -5
             }
             const hoursOffset = offset / 60;
 

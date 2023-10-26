@@ -5,7 +5,7 @@
  * 
  * @author SomePogProgrammer
  * 
- * 
+ *  THIS FILE IS A PREVIOUS VERISON OF MY CUSTOM PACKAGE: 'SERVER-GLOBALS'
  * 
  * Functionality: 
  * @namespace server => All custom Server Types

@@ -1,15 +1,15 @@
-import { Link} from "react-router-dom";
-
+'use client'
+import Link from "next/link"
 import "./scss/navigation-links2.scss";
-import { memo } from "react"
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 
 function NavigationLinks2(propsTable) {
   var props = Object.assign(NavigationLinks2.customProps, propsTable)
+  var curURL = process.env.NEXT_PUBLIC_SITE_URL
   NavigationLinks2.useRenderHead()
-
+  
   return (
     <nav
       className={`navigation-links2-nav navigation-links2-${props.rootClassName} `}
@@ -17,19 +17,19 @@ function NavigationLinks2(propsTable) {
       
       <Link
       
-       to={"/"} className="navigation-links2-navlink">
+       href={curURL + "/"} onClick={ typeof window != "undefined" && window.scrollTo({'behavior':'smooth','top':"0"})} className="navigation-links2-navlink">
         {props.AboutMe}
       </Link>
-      <Link to="/past-work" className="navigation-links2-navlink1">
+      <Link href={curURL + "/pages/past-work"} onClick={typeof window != "undefined" && window.scrollTo({'behavior':'smooth','top':"0"})} className="navigation-links2-navlink1">
         {props.PastWork}
       </Link>
-      <Link to="/web-development" className="navigation-links2-navlink2">
+      <Link href={curURL + "/pages/web-development"} onClick={typeof window != "undefined" && window.scrollTo({'behavior':'smooth','top':"0"})} className="navigation-links2-navlink2">
         {props.WebDevelopment}
       </Link>
-      <Link to="/contact-me" className="navigation-links2-navlink3">
+      <Link href={curURL + "/pages/contact-me"} onClick={typeof window != "undefined" && window.scrollTo({'behavior':'smooth','top':"0"})} className="navigation-links2-navlink3">
         {props.ContactMe}
       </Link>
-      <Link to="/behind-the-scenes" className="navigation-links2-navlink4">
+      <Link href={curURL + "/pages/behind-the-scenes"} onClick={typeof window != "undefined" && window.scrollTo({'behavior':'smooth','top':"0"})} className="navigation-links2-navlink4">
         {props.BehindTheScenes}
       </Link>
     </nav>
@@ -56,7 +56,7 @@ NavigationLinks2.useRenderHead = function() {
       document.title = listOf[location.split("#/")[1]] + " - SomeProgrammer's Portfolio"
 
     } else if (location.toLowerCase().match("jobrequest")) {
-      document.title = "Job Request - SomeProgrammer's Portfolio"
+      document.title = "JobRequest - SomeProgrammer's Portfolio"
     }
 
   },[])
@@ -86,4 +86,4 @@ NavigationLinks2.propTypes = {
   WebDevelopment: PropTypes.string,
 };
 
-export default memo(NavigationLinks2);
+export default NavigationLinks2;

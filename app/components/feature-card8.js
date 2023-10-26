@@ -1,6 +1,7 @@
+'use client'
 import {memo} from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import Link  from "next/link";
 import "./scss/feature-card8.scss";
 
 const FeatureCard8 = (propsTable) => {
@@ -14,7 +15,7 @@ const FeatureCard8 = (propsTable) => {
       <h2 className="feature-card8-text">{props.title}</h2>
       <span className="feature-card8-text1">{props.description}</span>
       <button className="feature-card8-past-work button">
-      <Link to={"/behind-the-scenes"}>{props.PastWork}</Link>
+      <Link href="/behind-the-scenes">{props.PastWork}</Link>
       </button>
     </div>
   );

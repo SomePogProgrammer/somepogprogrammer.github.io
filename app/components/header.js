@@ -1,52 +1,63 @@
-import {memo, useEffect} from "react";
+'use client'
+import { memo, useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import Image from "next/image";
 import NavigationLinks2 from "./navigation-links2";
 import "./scss/header.scss";
 
 const Header = (propsTable) => {
-  
+  const [isClient, setIsClient] = useState(false)
+  const [curRoute, setCurRoute] = useState()
   var props = Object.assign(Header.customProps, propsTable)
   
 
-  var curRoute = window.location.href.split("/#")[1]
+  useEffect(() => {
+    setIsClient(true)
+    var curRoute_ = window.location.pathname.split("/pages")[1]
 
-  if (curRoute  == "/" || curRoute == "") {
-    curRoute = "About-Me"
-  } else if (!curRoute) {
-    curRoute = "About-Me"
+    if (curRoute_ == "/" || curRoute_ == "") {
+      curRoute_ = "About-Me"
+      setCurRoute(curRoute_)
+    } else if (!curRoute_) {
+      curRoute_ = "About-Me"
+      setCurRoute(curRoute_)
+    }
+    else if (curRoute_ !== null) {
+      curRoute_ = curRoute_.replace("/", "")
+      setCurRoute(curRoute_)
+    }
+    if (curRoute_.toLowerCase().match("jobrequests")) {
+      curRoute_ = "Job Request"
+      setCurRoute(curRoute_)
   }
-  else if (curRoute !== null ) {
-    curRoute = curRoute.replace("/","")
-  }
-  if (curRoute.toLowerCase().match("jobrequests")) {
-    curRoute = "Job Request"
-  }
+  }, [])
 
 
-  return (
-    <header className="header-header fixed-navbar">
-      <img
-        alt={props.image_alt}
-        src={props.image_src}
-        className="header-image"
-      />
-      <div className="header-nav">
-        <NavigationLinks2
-          rootClassName="root-class-name16"
-          BehindTheScenes="Behind The Scenes"
-          className=""
-        ></NavigationLinks2>
-      </div>
-      <div className="header-btn-group">
-        <button className="header-login button" content={props.Login} ></button>
-        <button className="header-register button" content={props.Register} ></button> 
-      </div>
-      <h1 className="header-page-heading fixed-navbar">
-        <span className="">{curRoute}</span>
-        <br className=""></br>
-      </h1>
-    </header>
-  );
+return (
+  <header className="header-header fixed-navbar">
+    <img
+      alt={props.image_alt}
+      src={props.image_src}
+      className="header-image"
+
+    />
+    <div className="header-nav">
+      <NavigationLinks2
+        rootClassName="root-class-name16"
+        BehindTheScenes="Behind The Scenes"
+        className=""
+      ></NavigationLinks2>
+    </div>
+    <div className="header-btn-group">
+      <button className="header-login button" content={props.Login} ></button>
+      <button className="header-register button" content={props.Register} ></button>
+    </div>
+    <h1 className="header-page-heading fixed-navbar">
+      {isClient && <span className="">{curRoute}</span>}
+      <br className=""></br>
+    </h1>
+  </header>
+);
 };
 
 

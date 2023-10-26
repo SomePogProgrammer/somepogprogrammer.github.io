@@ -1,13 +1,5 @@
 {
     "Job_Requests": {
-        "id_MDEwLzE1LzIwMjMsIDM6NTY6MjEgUE0gbXM6IDYwNg": {
-            "_id": "id_MDEwLzE1LzIwMjMsIDM6NTY6MjEgUE0gbXM6IDYwNg",
-            "timestamp": "10/15/2023, 3:56:21 PM ms: 606"
-        },
-        "id_MTEwLzE1LzIwMjMsIDM6NTY6NTQgUE0gbXM6IDc0MQ": {
-            "_id": "id_MTEwLzE1LzIwMjMsIDM6NTY6NTQgUE0gbXM6IDc0MQ",
-            "timestamp": "10/15/2023, 3:56:54 PM ms: 741"
-        },
         "id_MjEwLzIyLzIwMjMsIDI6MzE6MDcgUE0gbXM6IDg0Ng": {
             "companyName": "Antique Technologic, Ltd",
             "contactType": "Email",
@@ -21,135 +13,44 @@
             "_id": "id_MjEwLzIyLzIwMjMsIDI6MzE6MDcgUE0gbXM6IDg0Ng",
             "timestamp": "10/22/2023, 2:31:07 PM ms: 846"
         },
-        "id_MzEwLzIyLzIwMjMsIDM6MTQ6MzIgUE0gbXM6IDM4Mg": {
-            "companyName": "eda",
+        "id_MTMxMC8yMy8yMDIzLCAyOjE3OjA4IFBNIG1zOiAzOTc": {
+            "companyName": "easf",
             "contactType": "Phone",
-            "contacts": "wderf",
-            "jobDescription": "ergt",
-            "roleOfJob": "efrsgt",
+            "contacts": "aewasrf",
+            "jobDescription": "b34rt",
+            "roleOfJob": "werd",
             "jobType": "Full Time",
-            "hours": "ergth",
+            "hours": "2",
             "paymentMethod": "USD - Cashapp",
-            "payment": "efgrth",
-            "_id": "id_MzEwLzIyLzIwMjMsIDM6MTQ6MzIgUE0gbXM6IDM4Mg",
-            "timestamp": "10/22/2023, 3:14:32 PM ms: 382"
+            "payment": "dfgf",
+            "_id": "id_MTMxMC8yMy8yMDIzLCAyOjE3OjA4IFBNIG1zOiAzOTc",
+            "timestamp": "10/23/2023, 2:17:08 PM ms: 397"
         },
-        "id_NDEwLzIyLzIwMjMsIDM6MTQ6NDkgUE0gbXM6IDU2Mg": {
-            "companyName": "eeee",
+        "id_MjEwLzI1LzIwMjMsIDk6MjY6NTEgUE0gbXM6IDc0NA": {
+            "companyName": "Testing",
             "contactType": "Phone",
-            "contacts": "eeee",
-            "jobDescription": "eeee",
-            "roleOfJob": "eeee",
+            "contacts": "Testing",
+            "jobDescription": "Testing",
+            "roleOfJob": "Testing",
             "jobType": "Full Time",
-            "hours": "eeee",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "eeeee",
-            "_id": "id_NDEwLzIyLzIwMjMsIDM6MTQ6NDkgUE0gbXM6IDU2Mg",
-            "timestamp": "10/22/2023, 3:14:49 PM ms: 562"
+            "hours": "Testing",
+            "paymentMethod": "USD - Cash",
+            "payment": "Testing",
+            "_id": "id_MjEwLzI1LzIwMjMsIDk6MjY6NTEgUE0gbXM6IDc0NA",
+            "timestamp": "10/25/2023, 9:26:51 PM ms: 744"
         },
-        "id_NTEwLzIyLzIwMjMsIDM6MjI6NDYgUE0gbXM6IDkyOQ": {
-            "companyName": "Antique Technologic, Ltd",
+        "id_MzEwLzI1LzIwMjMsIDEwOjI3OjQ5IFBNIG1zOiA1NTU": {
+            "companyName": "Testing",
             "contactType": "Phone",
-            "contacts": "eee",
-            "jobDescription": "eee",
-            "roleOfJob": "aaaaaaw",
-            "jobType": "Full Time",
-            "hours": "efrtgew",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "erdte",
-            "_id": "id_NTEwLzIyLzIwMjMsIDM6MjI6NDYgUE0gbXM6IDkyOQ",
-            "timestamp": "10/22/2023, 3:22:46 PM ms: 929"
-        },
-        "id_NjEwLzIyLzIwMjMsIDM6MjI6NTkgUE0gbXM6IDcwNA": {
-            "companyName": "eaeaw",
-            "contactType": "Phone",
-            "contacts": "asdfg",
-            "jobDescription": "ertfhygr",
-            "roleOfJob": "erdgtfh",
-            "jobType": "Full Time",
-            "hours": "erdgtfhg",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "werdgf",
-            "_id": "id_NjEwLzIyLzIwMjMsIDM6MjI6NTkgUE0gbXM6IDcwNA",
-            "timestamp": "10/22/2023, 3:22:59 PM ms: 704"
-        },
-        "id_NzEwLzIyLzIwMjMsIDM6MjQ6MDAgUE0gbXM6IDU1Nw": {
-            "companyName": "eee",
-            "contactType": "Phone",
-            "contacts": "adsfg",
-            "jobDescription": "wesfrdg",
-            "roleOfJob": "wesrdgw",
-            "jobType": "Full Time",
-            "hours": "ergtfgh",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "werty",
-            "_id": "id_NzEwLzIyLzIwMjMsIDM6MjQ6MDAgUE0gbXM6IDU1Nw",
-            "timestamp": "10/22/2023, 3:24:00 PM ms: 557"
-        },
-        "id_ODEwLzIyLzIwMjMsIDM6MjQ6NTIgUE0gbXM6IDUyNQ": {
-            "companyName": "eea",
-            "contactType": "Phone",
-            "contacts": "ertye",
-            "jobDescription": "rtyghj",
-            "roleOfJob": "ee",
-            "jobType": "Full Time",
-            "hours": "werdtf",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "rdtfyg",
-            "_id": "id_ODEwLzIyLzIwMjMsIDM6MjQ6NTIgUE0gbXM6IDUyNQ",
-            "timestamp": "10/22/2023, 3:24:52 PM ms: 525"
-        },
-        "id_OTEwLzIyLzIwMjMsIDM6MjU6NTMgUE0gbXM6IDQwOQ": {
-            "companyName": "earsderg",
-            "contactType": "Phone",
-            "contacts": "wertghee",
-            "jobDescription": "wrtygu",
-            "roleOfJob": "esrdtfy",
-            "jobType": "Full Time",
-            "hours": "eawsrdtfy",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "werty",
-            "_id": "id_OTEwLzIyLzIwMjMsIDM6MjU6NTMgUE0gbXM6IDQwOQ",
-            "timestamp": "10/22/2023, 3:25:53 PM ms: 409"
-        },
-        "id_MTAxMC8yMi8yMDIzLCA0OjI3OjE4IFBNIG1zOiA5Nw": {
-            "companyName": "eea",
-            "contactType": "Phone",
-            "contacts": "aa",
-            "jobDescription": "wertfghe",
-            "roleOfJob": "rtyg",
-            "jobType": "Full Time",
-            "hours": "esrdt",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "werdtfyg",
-            "_id": "id_MTAxMC8yMi8yMDIzLCA0OjI3OjE4IFBNIG1zOiA5Nw",
-            "timestamp": "10/22/2023, 4:27:18 PM ms: 97"
-        },
-        "id_MTExMC8yMi8yMDIzLCA0OjMzOjEyIFBNIG1zOiA5MzA": {
-            "companyName": "rser",
-            "contactType": "Phone",
-            "contacts": "ears",
-            "jobDescription": "esrt",
-            "roleOfJob": "aerst",
-            "jobType": "Full Time",
-            "hours": "aerear",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "eea",
-            "_id": "id_MTExMC8yMi8yMDIzLCA0OjMzOjEyIFBNIG1zOiA5MzA",
-            "timestamp": "10/22/2023, 4:33:12 PM ms: 930"
-        },
-        "id_MTIxMC8yMi8yMDIzLCA0OjM3OjIwIFBNIG1zOiA2MjE": {
-            "companyName": "eeeeeeeeeeae",
-            "contactType": "Phone",
-            "contacts": "eeeeeeeeeeae",
-            "jobDescription": "eeeeeeeeeeae",
-            "roleOfJob": "eeeeeeeeeeae",
-            "jobType": "Full Time",
-            "hours": "eeeeeeeeeeae",
-            "paymentMethod": "USD - Cashapp",
-            "payment": "eeeeeeeeeeae",
-            "_id": "id_MTIxMC8yMi8yMDIzLCA0OjM3OjIwIFBNIG1zOiA2MjE",
-            "timestamp": "10/22/2023, 4:37:20 PM ms: 621"
+            "contacts": "Testing",
+            "jobDescription": "Testing",
+            "roleOfJob": "Testing",
+            "jobType": "Commission",
+            "hours": "Testing",
+            "paymentMethod": "USD - Check",
+            "payment": "Testing2",
+            "_id": "id_MzEwLzI1LzIwMjMsIDEwOjI3OjQ5IFBNIG1zOiA1NTU",
+            "timestamp": "10/25/2023, 10:27:49 PM ms: 555"
         }
     },
     "Interview_Requests": {}

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server"
 
 const allowedOrigins = process.env.NODE_ENV === 'production'
     ? ['']
-    : ['http://localhost:3000']
+    : [process.env.NEXT_PUBLIC_SITE_URL,process.env.NEXT_PUBLIC_SITE_URL_,process.env.NEXT_PUBLIC_SITE_URL__]
 
 export function middleware(request: Request) {
 

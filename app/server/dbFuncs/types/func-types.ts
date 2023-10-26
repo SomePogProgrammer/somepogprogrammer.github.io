@@ -99,15 +99,7 @@ export function fetchDB(dbName_: string | URL, RequestInfo?: fetchDBProps)  {
         if (RequestInfo.tableLocation) {
             dir = dbName + "/" + RequestInfo.tableLocation
         }
-       /* let data = await fetch(dir)
-        .then((res) => {
-            return res
-        })
-        .catch((err) => {
-            return new Error(err)
-        })*/
 
-       // return (await fetch(dir),"BEANS!")
        return ("Cannot get")
 
     }
