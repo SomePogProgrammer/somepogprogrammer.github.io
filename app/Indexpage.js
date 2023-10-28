@@ -1,9 +1,9 @@
 /* © | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED © */
 "use client"
 
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./globals.scss"
 import "./page.scss";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/login";
 import Home from "./pages/home";
 import ContactMe from "./pages/contact-me";

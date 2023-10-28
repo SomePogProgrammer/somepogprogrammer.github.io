@@ -1,4 +1,7 @@
 'use client'
+import "../../globals.scss";
+import "../scss/about-me.scss";
+import "../../page.scss";
 import { Helmet } from 'react-helmet'
 import React, {useEffect} from "react";
 import NavigationLinks from "../../components/navigation-links2";
@@ -11,9 +14,8 @@ import FeatureCard5 from "../../components/feature-card5";
 import FeatureCard6 from "../../components/feature-card6";
 import FeatureCard7 from "../../components/feature-card7";
 import FeatureCard8 from "../../components/feature-card8";
-import "../scss/about-me.scss";
-import "../../page.scss";
-import "../../globals.scss";
+
+
 import CodeEmbed from "../../componentUtilities/codeEmbed";
 
 

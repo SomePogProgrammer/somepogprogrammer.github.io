@@ -1,10 +1,11 @@
+import "../../../globals.scss";
+import '../../scss/request.scss'
+import "../../../page.scss";
 import {readDB} from "dbfuncs"
 import _RequestPage from "./_page"
 import NotFound from "../../../not-found"
 import { notFound } from 'next/navigation'
-import '../../scss/request.scss'
-import "../../../page.scss";
-import "../../../globals.scss";
+
 
 export async function generateStaticParams() {
     const data = await readDB("Portfolio_Data.json")

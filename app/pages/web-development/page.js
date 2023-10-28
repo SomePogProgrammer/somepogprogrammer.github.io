@@ -1,10 +1,10 @@
 'use client'
-import React from "react";
-import Header from "../../components/header";
-import { Helmet } from 'react-helmet'
 import "../scss/web-development.scss";
 import "../../page.scss";
 import "../../globals.scss";
+import React from "react";
+import Header from "../../components/header";
+import { Helmet } from 'react-helmet'
 
 const WebDevelopment = (props) => {
   return (

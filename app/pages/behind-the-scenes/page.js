@@ -1,10 +1,11 @@
 'use client'
-import { Helmet } from 'react-helmet'
-import React from 'react'
-import Header from '../../components/header'
 import '../scss/behind-the-scenes.scss'
 import "../../page.scss";
 import "../../globals.scss";
+import { Helmet } from 'react-helmet'
+import React from 'react'
+import Header from '../../components/header'
+
 
 const BehindTheScenes = () => {
   return (

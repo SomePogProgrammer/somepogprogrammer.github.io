@@ -1,10 +1,11 @@
 'use client'
+import "./globals.scss"
+import "./pages/scss/page.scss";
+import "./page.scss"
 import React from "react";
 import { Helmet } from 'react-helmet'
 import Link from "next/link";
-import "./pages/scss/page.scss";
-import "./globals.scss"
-import "./page.scss"
+
 
 const NotFound = (props) => {
   return (
