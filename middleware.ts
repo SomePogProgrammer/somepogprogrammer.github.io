@@ -11,7 +11,7 @@ export function middleware(request: Request) {
     console.log(origin)
 
 
-    if (origin && !allowedOrigins.includes(origin) || !origin) {
+    if (origin && !allowedOrigins.includes(origin)/* || !origin*/) {
         return NextResponse.json(
             {
                 success: false, message: `Unauthorized Fetch`,

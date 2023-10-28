@@ -1,24 +1,34 @@
-'use client'
-import Header from '../../../components/header'
+import {readDB} from "dbfuncs"
+import _RequestPage from "./_page"
+import NotFound from "../../../not-found"
+import { notFound } from 'next/navigation'
 import '../../scss/request.scss'
 import "../../../page.scss";
 import "../../../globals.scss";
-import { Helmet } from 'react-helmet';
-import Head from 'next/head';
 
-export default function RequestPage() {
+export async function generateStaticParams() {
+    const data = await readDB("Portfolio_Data.json")
+    const map = Object.entries(data.Job_Requests)
+    const result = map.map((entry) => {
+
+        return {
+            _id: entry[1]._id
+        }
+    })
+    console.log("res", result)
+    return result;
+}
+generateStaticParams()
+
+export default function RequestPage({ params }) {
+    const { _id } = params
     
+    if (!_id) {
+        notFound()
+    }
     return (
-       
-        <div className="request-container w-full h-full absolute">
-            <Header></Header>
-            <div className="banner"></div>
-            <div className="inner-request-container bg-[#979797] rounded-xl flex-auto mx-auto w-full md:w-3/6 h-full">
-                <div className="id-status-container text-center">
-                    <h1 className=" font-source-code-pro text-white">WORK IN PROGRESS</h1>
-                </div>
-            </div>
-        </div>
-       
+
+    <_RequestPage _id={params._id}></_RequestPage>
+
     )
 }

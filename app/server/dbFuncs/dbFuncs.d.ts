@@ -31,6 +31,7 @@ declare global {
 
 
 ////    ____________ MODULE ____________  \\\\
+
 export default funcTypes.fetchDB
 export const readDB = funcTypes.readDB
 

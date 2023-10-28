@@ -13,7 +13,6 @@
 **/
 
 
-
 interface serverContainer {
     api: namespace,
 }
@@ -70,7 +69,6 @@ export namespace server {
             }
 
         };
-
 
 
 
@@ -223,7 +221,6 @@ export namespace dataRoute {
 const api_RequestTime_Limit_ = 25000
 
 /** @module_exports */
-
 export type JobRequests = import("./interfaces/types").Job_Requests;
 export type InterviewRequests = import("./interfaces/types").Interview_Requests;
 export type ResponseError = import("./interfaces/types").ResponseError;

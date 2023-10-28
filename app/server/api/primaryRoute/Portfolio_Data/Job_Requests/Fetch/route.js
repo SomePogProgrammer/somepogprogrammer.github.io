@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import fetchDB from "dbfuncs"
-
+export const dynamic = 'force-static'
 export async function GET(req) {
 
     if (req.method == "GET") {

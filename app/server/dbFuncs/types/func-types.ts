@@ -16,6 +16,7 @@ import fs from "fs"
 import path from "path"
 import { server } from "server-globals"
 import process from "process"
+import { generateStaticParams } from "../../../pages/JobRequests/[_id]/page"
 const API_FUNCS = server.apiFuncs
 const __dirname = process.cwd() + server.api.API_ROUTES.dataRoute.ex_Path
 
@@ -29,6 +30,7 @@ export function convertPath(dbPath: string | URL) : string | URL  {
         return dbPath
     }
 }
+
 
 
 export function readDB(dbName_: string | URL): object | any | Error {
@@ -65,6 +67,7 @@ export function writeDB(dbName_: string | URL, RequestInfo: dbProps) {
         var fullData = oldData
         console.warn("BANANAS")
         fs.writeFileSync(dbName, JSON.stringify(fullData, null, 4))
+        generateStaticParams()
         return ({ Message: "Saved Data Successfully", _id: id })
     } catch (err) {
         return ({ Message: "Failed To Add Data", ERROR_: err})

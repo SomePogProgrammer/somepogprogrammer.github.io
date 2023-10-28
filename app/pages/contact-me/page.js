@@ -4,48 +4,49 @@ import { apiFuncs, api_RequestTime_Limit } from 'server-globals'
 import { Helmet } from 'react-helmet'
 import { useForm } from "react-hook-form"
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import '../scss/contact-me.scss'
 import "../../page.scss";
 import "../../globals.scss";
 
 
 const ContactMe = () => {
-    
     useEffect(() => {
-     
+
         if (!localStorage.getItem("Last_Request_Time")) {
-          localStorage.getItem("Last_Request_Time",null)
+            localStorage.getItem("Last_Request_Time", null)
         }
         if (!localStorage.getItem("Job_Request")) {
-             localStorage.setItem("Job_Request",null)
+            localStorage.setItem("Job_Request", null)
         }
         if (!localStorage.getItem("Interview_Request")) {
             localStorage.setItem("Interview_Request", null)
         }
-        
-      },[])
+
+    }, [])
     var defaultReqTime = api_RequestTime_Limit
     const [jobRequestData, setJobRequestData] = useState();
     const [lastRequestTime, setRequestTime] = useState(defaultReqTime);
+    const router = useRouter()
     const { register, handleSubmit } = useForm();
     var currentTime = apiFuncs.getESTLocalTime({ getRawTime: true });
-    
+
     const useOnSubmit = (data, e) => {
         e.preventDefault()
         setJobRequestData(data)
         useAPIRequest_Job(e, data)
-
     }
-    
+
     useEffect(() => {
         var lastReqTime = localStorage.getItem("Last_Request_Time")
-        
+
         if (lastReqTime) {
             defaultReqTime = lastReqTime
         }
 
         if (localStorage.getItem("Job_Request") != "null") {
-            window.location = "/pages/JobRequests/" + localStorage.getItem("Job_Request")
+            router.prefetch("/pages/JobRequests/" + localStorage.getItem("Job_Request"))
+            router.push("/pages/JobRequests/" + localStorage.getItem("Job_Request"), { scroll: "smooth" })
         }
 
     }, [])
@@ -76,6 +77,7 @@ const ContactMe = () => {
                 req._id != null
                     ? localStorage.setItem("Job_Request", req._id)
                     : alert("An Error Occured In Processing The Request, \n Try again in 25-30s, thank you! \n (The Window Will Now Reload)");
+                router.prefetch("/pages/JobRequests/" + localStorage.getItem("Job_Request"))
                 window.location.reload()
             } else {
                 console.log(req_)
@@ -392,17 +394,18 @@ ContactMe.apiRequest = async function (fetchLocation, method, data, currentTime,
 
     var _data = {}
     if (Math.abs(currentTime - lastRequestTime) >= api_RequestTime_Limit) {
-     
+
         return await fetch(fetchLocation, {
             method: method,
             body: data,
+
             headers: {
                 "Content-Type": "application/json",
             },
         }).then(async (res) => {
 
             var data = await res.json();
-           
+
             if (data["ERROR_"]) {
                 throw { "Error Message": data["Message"], ERROR_: data["ERROR_"] };
             } else {
