@@ -363,7 +363,7 @@ const ContactMe = () => {
                 
                   await fetch(
                     process.env.NEXT_PUBLIC_SITE_URL +
-                      "server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch"
+                      "/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch"
                   ).then(async (req) => {
                     var data = await req.json();
                     alert("Your Data, Sire: \n" + JSON.stringify(data));
