@@ -1,6 +1,6 @@
 ////    ____________ IMPORTS ____________  \\\\
 
-import fs from "fs"
+import fs, { read } from "fs"
 import path from "path"
 import { server } from "server-globals"
 import process from "process"
