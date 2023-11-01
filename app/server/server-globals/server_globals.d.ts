@@ -128,6 +128,7 @@ export namespace server {
             }
             const hoursOffset = offset / 60;
 
+
             const estHours = hoursOffset + estOffset;
             const estTime = new Date(date.getTime() + estHours * 60 * 60 * 1000);
 
