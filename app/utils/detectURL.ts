@@ -6,4 +6,6 @@ const NEXT_PUBLIC_SITE_URL = isProduction
   ? "http://localhost:3000"
   : "https://somepogprogrammer.github.io";
 
-module.exports = NEXT_PUBLIC_SITE_URL;
+const AUTHORIZED_REQ_URL = "https://portfolio-api-backend.vercel.app";
+
+module.exports = [NEXT_PUBLIC_SITE_URL, AUTHORIZED_REQ_URL];

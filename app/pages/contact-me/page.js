@@ -60,6 +60,7 @@ const ContactMe = () => {
                 currentTime, lastRequestTime
             );
             if (req_ != "Request Limit Exceeded.") {
+              console.log("Request", req_)
                 var req = JSON.parse(req_)
 
                 if (req._id) {
@@ -448,7 +449,7 @@ const ContactMe = () => {
 
 ContactMe.apiRequest = async function (fetchLocation, method, data, currentTime, lastRequestTime) {
     fetchLocation =
-        process.env.NEXT_PUBLIC_SITE_URL +
+        process.env.AUTHORIZED_REQ_URL +
         "/server/api/primaryRoute/" +
         fetchLocation;
 
