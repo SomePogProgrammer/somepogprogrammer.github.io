@@ -8,8 +8,9 @@ import { notFound } from 'next/navigation'
 
 
 export async function generateStaticParams() {
-    const data = await readDB("Portfolio_Data.json")
-    const map = Object.entries(data.Job_Requests)
+    //const data = await readDB("Portfolio_Data.json")
+    const {DB_Data} = await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
+    const map = Object.entries(DB_Data.Job_Requests)
     const result = map.map((entry) => {
 
         return {
