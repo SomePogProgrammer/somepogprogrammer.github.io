@@ -3,11 +3,16 @@ import '../../scss/request.scss'
 import "../../../page.scss";
 import _RequestPage from "./_page"
 import Header from '../../../components/header'
-import { getProperIds } from "./lib/JobRequests";
+import { getProperIds, getIdArrayed } from "./lib/JobRequests";
 import { notFound } from 'next/navigation'
 
 
 export async function generateStaticParams() {
+    const _validIds = await getIdArrayed()
+    console.log("VALID",_validIds)
+    return _validIds
+}
+/*export async function generateStaticParams() {
     //const data = await readDB("Portfolio_Data.json")
     const data = await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
    console.log("DATA", await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
@@ -22,7 +27,7 @@ export async function generateStaticParams() {
     console.log("res", result)
     console.log("TEMP SECRET", process.env.SECRET_)
     return result;
-}
+}*/
 /*generateStaticParams()*/
 
 
@@ -49,8 +54,9 @@ export default async function RequestPage({ params }) {
     const { _id } = params
     const {_validIds, _dataTable } = await getProperIds()
     const jobRequest = _dataTable[_id] 
-    console.log(_validIds)
-    !_validIds.includes(_id) && notFound()
+    
+    !_validIds.includes(_id) && notFound() + alert("Wait 10-15 Seconds and Refresh, If the issue persists please contact me via Email or Discord. \n Email: quincy.m.dack@gmail.com \n Discord: SwedishAeternum")
+
     
     
     
