@@ -7,7 +7,7 @@ import { getProperIds } from "./lib/JobRequests";
 import { notFound } from 'next/navigation'
 
 
-/*export async function generateStaticParams() {
+export async function generateStaticParams() {
     //const data = await readDB("Portfolio_Data.json")
     const data = await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
    console.log("DATA", await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
@@ -22,7 +22,7 @@ import { notFound } from 'next/navigation'
     console.log("res", result)
     console.log("TEMP SECRET", process.env.SECRET_)
     return result;
-}*/
+}
 /*generateStaticParams()*/
 
 

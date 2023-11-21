@@ -1,4 +1,4 @@
-import getRef from "../../../../utils/getDBref";
+import {getRef} from "../../../../utils/getDBref";
 
 export async function getProperIds() {
     /*var reqHeaders = new Headers();

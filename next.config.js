@@ -2,7 +2,7 @@ const [NEXT_PUBLIC_SITE_URL,AUTHORIZED_REQ_URL,SECRET_] = require("./app/utils/d
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    //output: "export",
+    output: "export",
     env : {
         NEXT_PUBLIC_SITE_URL : NEXT_PUBLIC_SITE_URL,
         AUTHORIZED_REQ_URL: AUTHORIZED_REQ_URL,
