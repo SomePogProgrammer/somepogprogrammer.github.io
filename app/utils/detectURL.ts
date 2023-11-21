@@ -8,4 +8,6 @@ const NEXT_PUBLIC_SITE_URL = isProduction
 
 const AUTHORIZED_REQ_URL = "https://portfolio-api-backend.vercel.app";
 
-module.exports = [NEXT_PUBLIC_SITE_URL, AUTHORIZED_REQ_URL];
+const SECRET_ = require("crypto").randomBytes((Math.random() * 100 + 3)).toString('hex')
+
+module.exports = [NEXT_PUBLIC_SITE_URL, AUTHORIZED_REQ_URL, SECRET_];

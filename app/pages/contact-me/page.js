@@ -9,8 +9,8 @@ import '../scss/contact-me.scss'
 import "../../page.scss";
 import "../../globals.scss";
 
-
 const ContactMe = () => {
+
     useEffect(() => {
 
         if (!localStorage.getItem("Last_Request_Time")) {
@@ -72,9 +72,10 @@ const ContactMe = () => {
                      */
                 }
                 console.log("Request ID:", req._id)
-
                 localStorage.setItem("Last_Request_Time", currentTime);
-
+                if (req._id) {
+                  fetch(process.env.NEXT_PUBLIC_SITE_URL + "/api/revalidate" + `path=/pages/JobRequests/${req._id}/&secret=${process.env.SECRET_}`)
+                }
                 req._id != null
                     ? localStorage.setItem("Job_Request", req._id)
                     : alert("An Error Occured In Processing The Request, \n Try again in 25-30s, thank you! \n (The Window Will Now Reload)");

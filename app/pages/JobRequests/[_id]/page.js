@@ -1,36 +1,71 @@
 import "../../../globals.scss";
 import '../../scss/request.scss'
 import "../../../page.scss";
-import {readDB} from "dbfuncs"
 import _RequestPage from "./_page"
-import NotFound from "../../../not-found"
+import Header from '../../../components/header'
+import { getProperIds } from "./lib/JobRequests";
 import { notFound } from 'next/navigation'
 
 
-export async function generateStaticParams() {
+/*export async function generateStaticParams() {
     //const data = await readDB("Portfolio_Data.json")
     const data = await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
+   console.log("DATA", await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch",{method: "GET"}).then(async(res) => {return await res.json()})
+   )
     const map = Object.entries(data.DB_Data.Job_Requests)
     const result = map.map((entry) => {
 
         return {
-            _id: entry[1]._id
+            _id: entry[1]._id,
         }
     })
     console.log("res", result)
+    console.log("TEMP SECRET", process.env.SECRET_)
     return result;
-}
-generateStaticParams()
+}*/
+/*generateStaticParams()*/
 
-export default function RequestPage({ params }) {
+
+
+/*export async function getStaticPaths() {
+
+    const data = await fetch("https://portfolio-api-backend.vercel.app/server/api/primaryRoute/Portfolio_Data/Job_Requests/Fetch", { method: "GET" }).then(async (res) => { return await res.json() })
+    console.log(data)
+    const map = Object.entries(data.DB_Data.Job_Requests)
+    const result = map.map((entry) => {
+
+        return `/pages/JobRequests/${entry[1]._id}`
+
+    })
+    //console.log("res", result)
+    //console.log("TEMP SECRET", process.env.SECRET_)
+    return { paths: result, fallback: true };
+
+}*/
+
+
+
+export default async function RequestPage({ params }) {
     const { _id } = params
+    const {_validIds, _dataTable } = await getProperIds()
+    const jobRequest = _dataTable[_id] 
+    console.log(_validIds)
+    !_validIds.includes(_id) && notFound()
     
-    if (!_id) {
-        notFound()
-    }
+    
+    
     return (
-
-    <_RequestPage _id={params._id}></_RequestPage>
+        <div className="request-container w-full h-full absolute">
+            <Header></Header>
+            <div className="banner"></div>
+            <div className="inner-request-container bg-[#979797] rounded-xl flex-auto mx-auto w-full md:w-3/6 h-full">
+                <div className="id-status-container text-center">
+                    <h1 className="font-source-code-pro text-white">WORK IN PROGRESS</h1>
+                    {jobRequest && <span>Request Id: {jobRequest._id != null ? jobRequest._id : _id}</span>}
+                </div>
+            </div>
+        </div>
 
     )
 }
+
