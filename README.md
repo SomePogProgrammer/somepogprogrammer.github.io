@@ -1,4 +1,4 @@
-© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
+© | Copyright 2023, Somepogprogrammer's Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
 
 # --------- ATTENTION ---------
 
@@ -21,4 +21,4 @@ You may not clone, fork, or use any of the code under this project or inside thi
 
 
 
-© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
+© | Copyright 2023, Somepogprogrammer's Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
