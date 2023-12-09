@@ -1,5 +1,6 @@
 © | Copyright 2023, Somepogprogrammer's Portfolio | Quincy M. Dack | ALL RIGHTS RESERVED ©
-Also known referred to as **"SomeProgrammer's ReactJS Portfolio"**
+
+Also referred to as **"SomeProgrammer's ReactJS Portfolio"**
 
 # --------- ATTENTION ---------
 
