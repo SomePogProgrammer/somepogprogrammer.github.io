@@ -1,4 +1,4 @@
-© | Copyright 2023, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©
+© | Copyright 2024, SomeProgrammer's ReactJS Portfolio | SomePogProgrammer | ALL RIGHTS RESERVED ©
 
 # --------- ATTENTION ---------
 
