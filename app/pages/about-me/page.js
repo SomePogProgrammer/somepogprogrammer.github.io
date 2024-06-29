@@ -84,7 +84,7 @@ const AboutMe = (props) => {
           <li className="about-me-li list-item">
             <span className="about-me-text08">
               <span className="about-me-text09">
-                4+ Years of total programming experience.
+                5+ Years of total programming experience. (As of 6/11/2024)
               </span>
               <br className="about-me-text10"></br>
             </span>
@@ -113,7 +113,7 @@ const AboutMe = (props) => {
           <li className="about-me-li2 list-item">
             <span className="about-me-text20">
               <span className="about-me-text21">
-                4+ Years of total programming experience.
+                5+ Years of total programming experience.
               </span>
               <br className="about-me-text22"></br>
             </span>
@@ -140,7 +140,7 @@ const AboutMe = (props) => {
           </h1>
           <span className="about-me-text30">
             I started programming when I was around 11 and fell in love with it.
-            It&apos;s truly my passion. I&apos;m 100% self-taught, and I have 4
+            It&apos;s truly my passion. I&apos;m 100% self-taught, and I have 5+ as of 6/11/2024
             years of experience as a Game Developer, programming in Lua/LuaU.
             About a year and a half ago, I fell in love with web development. I
             already knew a programming language, so I had the programmer mind,
