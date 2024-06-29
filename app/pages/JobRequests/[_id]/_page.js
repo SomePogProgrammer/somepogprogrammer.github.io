@@ -3,7 +3,6 @@ import Header from '../../../components/header'
 import PropTypes from "prop-types"
 
 export default function _RequestPage(params) {
-    console.log(params)
     const { _id } = params
     return (
        
