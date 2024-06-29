@@ -12,10 +12,8 @@ export async function GET(req) {
 
 export async function POST(req,res) {
     const data = await req.json()
-   console.log(res)
    
     
-console.log("DATA!!",data)
     if (req.method == "POST") {
       
        var _data = fetchDB("Portfolio_Data.json", {
