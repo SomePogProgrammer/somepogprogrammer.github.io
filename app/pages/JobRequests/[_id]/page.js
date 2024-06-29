@@ -9,7 +9,6 @@ import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {
     const _validIds = await getIdArrayed()
-    console.log("VALID",_validIds)
     return _validIds
 }
 /*export async function generateStaticParams() {
