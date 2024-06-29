@@ -8,7 +8,6 @@ const allowedOrigins = process.env.NODE_ENV === 'production'
 export function middleware(request: Request) {
 
     const origin = request.headers.get('origin')
-    console.log(origin)
 
 
     if (origin && !allowedOrigins.includes(origin) || !origin) {
@@ -21,11 +20,6 @@ export function middleware(request: Request) {
         )
     }
     
-
-    console.log('Middleware!')
-
-    console.log(request.method)
-    console.log(request.url)
 
    
     return NextResponse.next()
