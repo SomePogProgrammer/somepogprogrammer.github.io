@@ -11,13 +11,11 @@ export async function generateStaticParams() {
             _id: entry[1]._id
         }
     })
-    console.log("res", result)
     return result;
 }
 
 export async function GET(req: NextRequest, { params }: { params: { _id: string } }) {
     const { _id } = params
-    console.log('PARAMS ID', _id)
     var dbFuncs = require("dbfuncs")
 
 
@@ -79,7 +77,6 @@ function getAllData(reqType: "path" | "props", _id?: string) {
 
     const data = readDB("Portfolio_Data.json")
     const map = Object.entries(data.Job_Requests)
-    console.log(map)
 
     if (reqType == "path") {
         return map.map((entry: any) => {
