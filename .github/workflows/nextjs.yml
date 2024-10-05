@@ -23,11 +23,11 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    
     steps:
       
       - name: Checkout
@@ -75,7 +75,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         env:
-          API_AUTH_KEY: 'secrets.API_AUTH_KEY'
+          API_AUTH_KEY: "OKAY" #$#{{ secrets.API_AUTH_KEY }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
