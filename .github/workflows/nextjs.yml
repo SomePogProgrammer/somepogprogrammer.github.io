@@ -74,9 +74,9 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-        env:
-          API_AUTH_KEY: "OKAY" #$#{{ secrets.API_AUTH_KEY }}
       - name: Build with Next.js
+        env:
+          API_AUTH_KEY: okay #$#{{ secrets.API_AUTH_KEY }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
       - name: Upload artifact
@@ -95,3 +95,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        env:
+          API_AUTH_KEY: okay #$#{{ secrets.API_AUTH_KEY }}
