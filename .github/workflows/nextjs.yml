@@ -76,7 +76,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         env:
-          API_AUTH_KEY: okay #$#{{ secrets.API_AUTH_KEY }}
+          API_AUTH_KEY: ${{ secrets.API_AUTH_KEY }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
       - name: Upload artifact
@@ -96,4 +96,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         env:
-          API_AUTH_KEY: okay #$#{{ secrets.API_AUTH_KEY }}
+          API_AUTH_KEY: ${{ secrets.API_AUTH_KEY }}
