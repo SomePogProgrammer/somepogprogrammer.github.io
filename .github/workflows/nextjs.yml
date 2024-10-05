@@ -93,4 +93,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         env:
-          API_AUTH_KEY: ${{ 'secrets.API_AUTH_KEY' }}
+          API_AUTH_KEY: 'secrets.API_AUTH_KEY'
