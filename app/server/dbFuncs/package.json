@@ -1,0 +1,11 @@
+{
+  "name": "dbfuncs",
+  "version": "1.0.4",
+  "description": "",
+  "main": "dbFuncs.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@SomeProgrammer aka @SomePogProgrammer",
+  "license": "ISC"
+}

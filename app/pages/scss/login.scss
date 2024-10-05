@@ -1,0 +1,131 @@
+.login-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.login-container1 {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  right: 0px;
+  width: 35%;
+  bottom: 0px;
+  height: 90vh;
+  display: flex;
+  padding: 5.5%;
+  position: absolute;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: flex-start;
+  margin-left: auto;
+  border-color: #3d3c3c;
+  border-style: solid;
+  border-width: 10px;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-bottom: auto;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1601714582667-574b826b99a6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDU0fHxsb2dpbnxlbnwwfHx8fDE2OTIwMzYyOTN8MA&ixlib=rb-4.0.3&h=1500");
+}
+.login-text {
+  color: rgb(255, 255, 255);
+  letter-spacing: 2.5px;
+}
+.login-company-name {
+  width: 80%;
+  height: 6vh;
+  margin-top: var(--dl-space-space-twounits);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.login-text04 {
+  color: rgb(255, 255, 255);
+  margin-top: var(--dl-space-space-twounits);
+  letter-spacing: 2.5px;
+}
+.login-account-password {
+  width: 80%;
+  height: 6vh;
+  margin-top: var(--dl-space-space-twounits);
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.login-text07 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin-left: var(--dl-space-space-oneandhalfunits);
+}
+.login-send-offer {
+  width: 100%;
+  height: 5vh;
+  font-size: 2em;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  transition: 0.3s;
+  font-family: Source Code Pro;
+  border-width: 0px;
+}
+.login-send-offer:hover {
+  color: white;
+  background-color: var(--dl-color-gray-black);
+}
+.login-text10 {
+  font-size: 1em;
+  font-style: normal;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.login-text13 {
+  color: rgb(255, 255, 255);
+  align-self: center;
+  text-align: center;
+}
+.login-send-offer1 {
+  width: 100%;
+  height: 5vh;
+  font-size: 2em;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  transition: 0.3s;
+  font-family: Source Code Pro;
+  border-width: 0px;
+  background-color: #f13e3e;
+}
+.login-send-offer1:hover {
+  color: white;
+  background-color: var(--dl-color-gray-black);
+}
+.login-text16 {
+  font-size: 1em;
+  font-style: normal;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.login-text19 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  font-size: 2em;
+  font-style: normal;
+  text-align: center;
+  font-family: Source Code Pro;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+@media(max-width: 1200px) {
+  .login-container1 {
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    position: absolute;
+  }
+}

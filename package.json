@@ -1,0 +1,51 @@
+{
+  "name": "somepogprogrammer.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "types": "./app/server/server_globals.d.ts",
+  "typescript": {
+    "definition": "./app/server/server_globals.d.ts"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "deploy": "gh-pages -b .next",
+    "export": "next build && next export",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.6.3",
+    "@types/react-dom": "18.2.7",
+    "@types/react-helmet": "^6.1.8",
+    "axios": "^1.5.1",
+    "dbfuncs": "file:app/server/dbFuncs",
+    "eslint": "8.50.0",
+    "eslint-config-next": "13.5.2",
+    "firebase": "^10.6.0",
+    "firebase-admin": "^11.11.0",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^6.0.0",
+    "json-server": "^0.17.4",
+    "next": "^14.0.1",
+    "postcss": "^8.4.31",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.47.0",
+    "react-router-dom": "^6.17.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "server-globals": "file:app/server/server-globals",
+    "styled-jsx": "^5.1.2",
+    "swr": "^2.2.4",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.31",
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.69.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
