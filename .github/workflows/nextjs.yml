@@ -29,6 +29,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
@@ -73,6 +74,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        env:
+          API_AUTH_KEY: 'secrets.API_AUTH_KEY'
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
@@ -92,5 +95,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        env:
-          API_AUTH_KEY: 'secrets.API_AUTH_KEY'
